@@ -1,0 +1,68 @@
+/*************************************************************************
+ * Your custom CSS file
+ *************************************************************************/
+
+.content-table>div:first-child>div:first-child>h2:first-child {
+  margin-top: 0;
+}
+
+.publications h3,
+.grants h3 {
+  color: #1b7677;
+}
+
+.publications ul,
+.grants ul {
+  margin-top: 0;
+}
+
+.banner {
+  background-color: #0021a5;
+}
+
+.about-me-section {
+  display: flex;
+}
+
+
+#current-team.gallery>div.flex-column>div,
+#alumni.gallery>div.flex-column>div,
+#current-team.gallery>div.flex-column>h3,
+#alumni.gallery>div.flex-column>h3 {
+  text-align: left;
+}
+
+.flex-item-stretch-6 {
+  flex: 1 auto;
+}
+
+.max-width-1000 {
+  max-width: 1000px;
+}
+
+@media screen and (min-width: 900px) {
+  .flex-item-stretch-6 {
+    flex: 4.5;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .gallery>div.flex-column {
+    flex: 1 0 33.3%;
+    max-width: 33.3%;
+  }
+}
+
+@media screen and (min-width: 630px) and (max-width: 900px) {
+  .gallery>div.flex-column {
+    flex: 1 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .gallery>div.flex-column {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}
