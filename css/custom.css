@@ -13,8 +13,14 @@
 
 .publications ul,
 .grants ul {
-  c
+  color: inherit;
+  list-style-type: none;
 }
+
+.publications ul li {
+  margin-bottom: 20px;
+}
+
 
 .banner {
   background-color: #0021a5;
