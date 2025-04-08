@@ -1,143 +1,145 @@
-<!doctype html>
-<html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Dr.Chang Zhao - Projects</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <title>Dr. Chang Zhao - Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Research projects by Dr. Chang Zhao">
+    
+    <!-- CSS -->
+    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    
+    <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menu.js"></script>
+    
     <style>
         .menu-projects {
-            color: rgb(255, 255, 255) !important;
+            color: #fff !important;
             opacity: 1 !important;
             font-weight: 700 !important;
         }
-
     </style>
 </head>
 
 <body>
     <div class="menu-container"></div>
+    
     <div class="content-container">
         <div class="content">
             <div class="content-table flex-column">
-                <!-------------------------------------------------------------------------------------------->
-                <!--Start Demo-->
-                <div class="flex-row">
+                <!-- Start Projects Section -->
+                <section class="flex-row">
                     <div class="flex-item flex-column full-width">
-                        <h2>List of Demos</h2>
+                        <h1>Research Projects</h1>
                         <hr>
                     </div>
-                </div>
-                <!-------------------------------------------------------------------------------------------->
-                <div class="flex-row">
+                </section>
+                
+                <!-- Project 1 -->
+                <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
-                        <img class="image max-width-1000" src="img/demo/panorams.png">
+                        <img class="image max-width-1000" src="img/demo/panorams.png" alt="PanorAMS framework visualization">
                     </div>
                     <div class="flex-item flex-item-stretch-6 flex-column">
-                        <p class="text">
-                            <span class="highlight-text">PanorAMS: Automatic Annotation for Detecting Objects in Urban Context</span><br>
-                            The PanorAMS framework involves a method to automatically generate bounding box annotations in geo-referenced panoramic images based on geospatial context information.
-                            We acquire large-scale (albeit noisy) annotations from open data sources.
-                            (<a href="https://panorams.inskegroenen.nl/">website link</a>, <a href="https://arxiv.org/abs/2208.14295">paper link</a>)
+                        <h2>PanorAMS: Automatic Annotation for Detecting Objects in Urban Context</h2>
+                        <p>
+                            The PanorAMS framework involves a method to automatically generate bounding box annotations in geo-referenced panoramic images based on geospatial context information. We acquire large-scale (albeit noisy) annotations from open data sources.
+                        </p>
+                        <p>
+                            <a href="https://panorams.inskegroenen.nl/" target="_blank" rel="noopener">Website</a> | 
+                            <a href="https://arxiv.org/abs/2208.14295" target="_blank" rel="noopener">Research Paper</a>
                         </p>
                     </div>
-                </div>
-                <!-------------------------------------------------------------------------------------------->
-                <div class="flex-row">
+                </article>
+                
+                <!-- Project 2 -->
+                <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
-                        <img class="image max-width-1000" src="img/demo/tindart.jpg">
+                        <img class="image max-width-1000" src="img/demo/tindart.jpg" alt="TindART interface screenshot">
                     </div>
                     <div class="flex-item flex-item-stretch-6 flex-column">
-                        <p class="text">
-                            <span class="highlight-text">TindART: A Personal Visual Arts Recommender</span><br>
-                            TindART is a web-based visual artwork reccomendation system.
-                            The system has visual analytics controls that allow users to gain a deeper understanding of their art taste and refine their personal recommendation.
-                            (<a href="https://tindart.net/">website link</a>, <a href="https://dl.acm.org/doi/10.1145/3394171.3414445">paper link</a>)
+                        <h2>TindART: A Personal Visual Arts Recommender</h2>
+                        <p>
+                            TindART is a web-based visual artwork recommendation system. The system has visual analytics controls that allow users to gain a deeper understanding of their art taste and refine their personal recommendation.
+                        </p>
+                        <p>
+                            <a href="https://tindart.net/" target="_blank" rel="noopener">Website</a> | 
+                            <a href="https://dl.acm.org/doi/10.1145/3394171.3414445" target="_blank" rel="noopener">Research Paper</a>
                         </p>
                     </div>
-                </div>
-                <!-------------------------------------------------------------------------------------------->
-                <div class="flex-row">
+                </article>
+                
+                <!-- Project 3 -->
+                <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
-                        <img class="image max-width-1000" src="img/demo/omniart.jpg">
+                        <img class="image max-width-1000" src="img/demo/omniart.jpg" alt="OmniArt dataset visualization">
                     </div>
                     <div class="flex-item flex-item-stretch-6 flex-column">
-                        <p class="text">
-                            <span class="highlight-text">OmniArt: A Large-scale Artistic Benchmark</span><br>
-                            OmniArt is a large scale artistic benchmark dataset aggregated from multiple collections around the world.
-                            It is designed for easy data handling and fast integration with popular deep learning frameworks.
-                            (<a href="https://vistory-omniart.com/">website link</a>, <a href="https://dl.acm.org/doi/10.1145/3273022">paper link</a>)
+                        <h2>OmniArt: A Large-scale Artistic Benchmark</h2>
+                        <p>
+                            OmniArt is a large scale artistic benchmark dataset aggregated from multiple collections around the world. It is designed for easy data handling and fast integration with popular deep learning frameworks.
+                        </p>
+                        <p>
+                            <a href="https://vistory-omniart.com/" target="_blank" rel="noopener">Website</a> | 
+                            <a href="https://dl.acm.org/doi/10.1145/3273022" target="_blank" rel="noopener">Research Paper</a>
                         </p>
                     </div>
-                </div>
-                <!-------------------------------------------------------------------------------------------->
-                <div class="flex-row">
+                </article>
+                
+                <!-- Project 4 -->
+                <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
-                        <img class="image max-width-1000" src="img/demo/gcnillustrator.jpeg">
+                        <img class="image max-width-1000" src="img/demo/gcnillustrator.jpeg" alt="GCNIllustrator interface">
                     </div>
                     <div class="flex-item flex-item-stretch-6 flex-column">
-                        <p class="text">
-                            <span class="highlight-text">GCNIllustrator: Illustrating the Effect of Hyperparameters on Graph Convolutional Networks</span><br>
-                            GCNIllustrator is a visual analytics tool for illustrating the effect of hyperparameters on graph convolutional networks (GCNs).
-                            It addresses one of the most tedious steps in training GCNs: the choice of hyperparameters and their influence on performance.
-                            (<a href="https://dl.acm.org/doi/abs/10.1145/3474085.3478566">video demo and paper link</a>)
+                        <h2>GCNIllustrator: Illustrating the Effect of Hyperparameters on Graph Convolutional Networks</h2>
+                        <p>
+                            GCNIllustrator is a visual analytics tool for illustrating the effect of hyperparameters on graph convolutional networks (GCNs). It addresses one of the most tedious steps in training GCNs: the choice of hyperparameters and their influence on performance.
+                        </p>
+                        <p>
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3474085.3478566" target="_blank" rel="noopener">Video Demo and Research Paper</a>
                         </p>
                     </div>
-                </div>
-                <!-------------------------------------------------------------------------------------------->
-                <!--Use the following commented block of code to add demos-->
-                <!-- <div class="flex-row">
-            <div class="flex-item flex-item-stretch flex-column">
-            <img class="image max-width-1000" src="img/demo/tindart.jpg">
-            </div>
-            <div class="flex-item flex-item-stretch-6 flex-column">
-            <p class="text">
-                <span class="highlight-text">TindART: A Personal Visual Arts Recommender</span><br>
-                TindART is a web-based visual artwork reccomendation system.
-                The system has visual analytics controls that allow users to gain a deeper understanding of their art taste and refine their personal recommendation.
-                (<a href="">website link</a>, <a href="">paper link</a>)
-            </p>
-            </div>
-        </div> -->
-                <!--Use the above commented block of code to add demos-->
-                <!--End Demo-->
-                <!-------------------------------------------------------------------------------------------->
-                <!-------------------------------------------------------------------------------------------->
-                <!-------------------------------------------------------------------------------------------->
+                </article>
+                <!-- End Projects Section -->
+                
             </div>
         </div>
-        <div class="banner">
-            <div class="banner-table flex-column">
-                <div class="flex-row">
-                    <div class="flex-item flex-column">
-                        <h2>Contact Us</h2>
-                        <p class="text no-bottom-margin">
-                            If you have any questions regarding our group and research feel free to contact us via the details provided below.
-                        </p>
-                        <p class="text no-bottom-margin">
-                            2091 McCarty Hall B, PO Box 110500, Gainesville, FL, 32611
-                        </p>
-                        <p class="text no-bottom-margin">
-                            Phone: +1 352-294-0994
-                        </p>
-                        <p class="text add-bottom-margin-large">
-                            Email: changzhao@ufl.edu
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
     </div>
-
+    <!-- Contact Section -->
+    <div class="banner">
+        <div class="banner-table flex-column">
+            <div class="flex-row">
+                <div class="flex-item flex-column">
+                    <h2>Contact Us</h2>
+                    <p class="text no-bottom-margin">
+                        If you have any questions regarding our group and research feel free to contact us via the details provided below.
+                    </p>
+                    <p class="text no-bottom-margin">
+                        1604 McCarty Hall D, PO Box 110500, Gainesville, FL, 32611
+                    </p>
+                    <p class="text no-bottom-margin">
+                        Phone: +1 352-294-0994
+                    </p>
+                    <p class="text add-bottom-margin-large">
+                        Email: changzhao@ufl.edu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
