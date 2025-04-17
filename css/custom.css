@@ -21,6 +21,13 @@
   margin-bottom: 20px;
 }
 
+.teaching ul li {
+  margin-bottom: 5px;
+}
+
+.teaching ul {
+  margin-bottom: 12px;
+}
 
 .banner {
   background-color: #0021a5;
