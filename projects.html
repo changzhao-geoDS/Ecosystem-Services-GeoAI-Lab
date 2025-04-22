@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,21 +6,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Research projects by Dr. Chang Zhao">
-    
+
     <!-- CSS -->
     <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-    
+
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menu.js"></script>
-    
+
     <style>
         .menu-projects {
             color: #fff !important;
@@ -36,7 +32,7 @@
 
 <body>
     <div class="menu-container"></div>
-    
+
     <div class="content-container">
         <div class="content">
             <div class="content-table flex-column">
@@ -47,25 +43,30 @@
                         <hr>
                     </div>
                 </section>
-                
+
                 <!-- Project 1 -->
                 <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
-                        <img class="image max-width-1000" src="img/demo/panorams.png" alt="PanorAMS framework visualization">
+                        <a href="img/Projects/AgroES_GrLaSOC.png" target="_blank">
+                            <img class="image max-width-1000" src="img/Projects/AgroES_GrLaSOC.png" alt="PanorAMS framework visualization">
+                        </a>
+
                     </div>
                     <div class="flex-item flex-item-stretch-6 flex-column">
-                        <h2>PanorAMS: Automatic Annotation for Detecting Objects in Urban Context</h2>
+                        <h2>Grazing Land SOC Prediction</h2>
                         <p>
-                            The PanorAMS framework involves a method to automatically generate bounding box annotations in geo-referenced panoramic images based on geospatial context information. We acquire large-scale (albeit noisy) annotations from open data sources.
+                            This study developed an accurate and scalable machine learning approach to predict topsoil SOC stocks (0–20 cm) and quantify uncertainty (90% prediction interval (PI)) across Florida’s diverse grazing lands at a 30m resolution.
+                            Random forest models were trained and evaluated using 5-fold nested cross-validation (nCV), while quantile random forest-derived PI widths and prediction interval coverage probability (PICP) plots were used to quantify and validate uncertainty.
                         </p>
                         <p>
-                            <a href="https://panorams.inskegroenen.nl/" target="_blank" rel="noopener">Website</a> | 
-                            <a href="https://arxiv.org/abs/2208.14295" target="_blank" rel="noopener">Research Paper</a>
+                            <a href="https://es-geoai.rc.ufl.edu/agroes-grazing-soc/" target="_blank" rel="noopener">Website</a> |
+                            <a href="https://scholar.google.com/citations?hl=en&user=C9z9unYAAAAJ" target="_blank" rel="noopener">Research Paper</a>
                         </p>
                     </div>
                 </article>
-                
+
                 <!-- Project 2 -->
+                <!--
                 <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
                         <img class="image max-width-1000" src="img/demo/tindart.jpg" alt="TindART interface screenshot">
@@ -81,8 +82,10 @@
                         </p>
                     </div>
                 </article>
-                
+-->
+
                 <!-- Project 3 -->
+                <!--
                 <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
                         <img class="image max-width-1000" src="img/demo/omniart.jpg" alt="OmniArt dataset visualization">
@@ -98,8 +101,10 @@
                         </p>
                     </div>
                 </article>
-                
+-->
+
                 <!-- Project 4 -->
+                <!--
                 <article class="flex-row project-item">
                     <div class="flex-item flex-item-stretch flex-column">
                         <img class="image max-width-1000" src="img/demo/gcnillustrator.jpeg" alt="GCNIllustrator interface">
@@ -114,11 +119,13 @@
                         </p>
                     </div>
                 </article>
+-->
                 <!-- End Projects Section -->
-                
+
             </div>
         </div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <!-- Contact Section -->
     <div class="banner">
         <div class="banner-table flex-column">
@@ -141,5 +148,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+</body></html>
