@@ -13,7 +13,20 @@
 
 .publications ul,
 .grants ul {
-  c
+  color: inherit;
+  list-style-type: none;
+}
+
+.publications ul li {
+  margin-bottom: 20px;
+}
+
+.teaching ul li {
+  margin-bottom: 5px;
+}
+
+.teaching ul {
+  margin-bottom: 12px;
 }
 
 .banner {
@@ -72,8 +85,11 @@
 /*    vertical-align: middle;*/
     display: flex;
       justify-content: center;
-      align-items: center;  
-    width: 1000px
+      align-items: center;
+}
+
+.list {
+  margin-left: 50px;
 }
 
 /**/
