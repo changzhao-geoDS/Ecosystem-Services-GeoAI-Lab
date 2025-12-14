@@ -48,24 +48,22 @@ body {
    Navigation
    ============================================ */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-sm);
-    z-index: 1000;
-    transition: all 0.3s ease;
+width: 100%;
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+box-shadow: var(--shadow-sm);
+z-index: 1000;
+transition: all 0.3s ease;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 1rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .nav-logo {
@@ -84,16 +82,16 @@ body {
 
 .nav-menu {
     display: flex;
-    list-style: none;
     gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-link {
     text-decoration: none;
-    color: var(--text-primary);
+    color: #222;
     font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
 }
 
 .nav-link::after {
@@ -118,16 +116,50 @@ body {
 .hamburger {
     display: none;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
     cursor: pointer;
+    position: absolute;
+    right: 1rem;
 }
 
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-primary);
-    border-radius: 2px;
-    transition: all 0.3s ease;
+    background: #222;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+
+    .nav-container {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-menu.active {
+        max-height: 500px;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #eee;
+    }
 }
 
 /* ============================================
