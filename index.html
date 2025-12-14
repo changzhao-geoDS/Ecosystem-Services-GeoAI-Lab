@@ -1,273 +1,841 @@
-<!doctype html>
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Dr. Chang Zhao - Ecosystem Service and Geospatial Artificial Intelligence (GeoAI) Lab</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/menu.js"></script>
-    <style>
-        .menu-index {
-            color: rgb(255, 255, 255) !important;
-            opacity: 1 !important;
-            font-weight: 700 !important;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Chang Zhao - Ecosystem Service and Geospatial AI Lab | UF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="menu-container" style="position: fixed;"></div>
-    <div class="menu-container fake"></div>
-    <div class="content-container">
-        <!-------------------------------------------------------------------------------------------->
-        <!--
-    <div class="banner" style="background: url('img/header.png') no-repeat center; background-size: cover; height: 420px;">
-      <div class="banner-table flex-column"></div>
-    </div>
-    
--->
-        <div class="banner hero">
-            <div class="banner-table flex-column">
-                <div class="flex-row">
-                    <div class="flex-item flex-column">
-                        <h2 class="title add-top-margin-small">Ecosystem Service and Geospatial Artificial Intelligence (GeoAI) Lab</h2>
-                        <p class="subtitle text">
-                            We research on Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning). The ultimate goals of this research group is to advance scientific understanding of where and how nature provides benefits to human societies, and to produce actionable knowledge and develop solutions to enhance sustainable land use planning and management across the continuum of urban and rural systems.
-                        </p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">GeoAI Lab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#teaching" class="nav-link">Teaching</a></li>
+                <li><a href="#vacancies" class="nav-link">Vacancies</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="mosaic-background" id="mosaicBackground">
+                <!-- Images will be added via JavaScript -->
+            </div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">University of Florida</div>
+            <h1 class="hero-title">
+                <span class="title-line">Ecosystem Services</span>
+                <span class="title-line highlight">GeoAI Lab</span>
+            </h1>
+            <p class="hero-subtitle">
+                We research on Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning). The ultimate goals of this research group is to advance scientific understanding of where and how nature provides benefits to human societies, and to produce actionable knowledge and develop solutions to enhance sustainable land use planning and management across the continuum of urban and rural systems.
+            </p>
+            <div class="hero-buttons">
+                <a href="#research" class="btn btn-primary">Explore Research</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2 class="section-title">Pioneering Geospatial Intelligence</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        The Ecosystem Services and Geospatial Artificial Intelligence (GeoAI) Lab at the University of Florida 
+                        is at the forefront of integrating advanced AI technologies with geospatial analysis to understand 
+                        and model ecosystem services.
+                    </p>
+                    <p>
+                        Our research bridges the gap between artificial intelligence, remote sensing, and environmental science, 
+                        creating innovative solutions for understanding complex ecological systems and their services to humanity. 
+                        We employ a wide range of geospatial, statistical, and AI tools, as well as observational, modeling, and mixed approaches.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="14">0</div>
+                            <div class="stat-label">Publications</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Team Members</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Conference Papers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="card-glow"></div>
+                        <div class="map-pattern"></div>
+                        <div class="logo-container">
+                            <img src="img/logo.png" alt="GeoAI Lab Logo" class="about-logo">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-------------------------------------------------------------------------------------------->
-        <div class="banner" style="no-repeat center; background-size: cover; aspect-ratio: 4.5;">
-            <iframe title="carousel" src="carousel.html" width="100%" height="100%" style="border: none;"></iframe>
-        </div>
-        <!-------------------------------------------------------------------------------------------->
-        <div class="content">
-            <!--Start News-->
-            <div class="flex-row">
-                <div class="flex-item flex-column full-width">
-                    <h2>News<a id="news"></a></h2>
-                    <hr>
-                    <ul class="news-list">
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[October, 2025]: </span>
-                                Congratulations to <b>Jiayi Song, Hao-Yu Liao</b> 🎉 
-                                on receiving the highly competitive <b>ACM SIGSPATIAL2025 Travel Award</b>. Which had a total pool of 130+ applicants.  
+    </section>
 
-                            </p>
-                            <br>
-                            📄 <a href="https://doi.org/10.1145/3748636.3764177" target="_blank">FoundationSoil DOI</a> | 
-                            📄 <a href="https://doi.org/10.1145/3748636.3764178" target="_blank">Cultural Ecosystem Services DOI</a> | 
-                            🔗 <a href="https://sigspatial2025.sigspatial.org/application-accepted/" target="_blank">Conference Link</a>  
-                        </li>
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[September 22, 2025]: </span>
-                                Congratulations to <b>Jiayi Song, Hao-Yu Liao</b> 🎉 
-                                on their latest <b>journal publication</b> in the <i>International Journal of Applied Earth Observation and Geoinformation</i>!  
-                                Their paper, <i>“Mapping invasive <i>Opuntia stricta</i> in Kenya’s Drylands using explainable machine learning with time-series remote sensing and geographic context”</i>, 
-                                demonstrates how explainable AI and geospatial data can support ecological monitoring and invasive species management 🌵🌍.  
-                                This is an excellent contribution to both environmental science and applied AI research!
-                                <br>
-                                📄 <a href="https://www.sciencedirect.com/science/article/pii/S156984322500514X" target="_blank">Read the article here</a>
-                            </p>
-                            <div class="thumb-row">
-                                <a href="img/publications/2025_09/opuntia_1.jpg" target="_blank">
-                                    <img src="img/publications/2025_09/opuntia_1.jpg" alt="Mini 2" class="thumb">
-                                </a>
-                                <a href="img/publications/2025_09/opuntia_2.jpg" target="_blank">
-                                    <img src="img/publications/2025_09/opuntia_2.jpg" alt="Mini 3" class="thumb">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[September 10, 2025]: </span>
-                                Congratulations to <b>Jiayi Song, Hao-Yu Liao</b> 🎉 for having <b>two papers accepted</b> to 
-                                the <i>33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL ’25)</i>, 
-                                which will be held in Minneapolis, MN, USA from November 3–6, 2025!  
-                                The first paper, <i>“FoundationSoil: Enhancing Soil Organic Carbon Mapping Using a Multi-Temporal Geospatial Foundation Model”</i>, 
-                                introduces a foundation model for improving soil carbon mapping 🌱.  
-                                The second paper, <i>“Mapping Cultural Ecosystem Services Using One-Shot In-Context Learning with Multimodal Large Language Models”</i>, 
-                                explores how multimodal AI can capture cultural ecosystem services in innovative new ways 🤖🌍.  
-                                Amazing work from the team on advancing geospatial AI!
-                                <br>
-                                📄 <a href="https://doi.org/10.1145/3748636.3764177" target="_blank">FoundationSoil DOI</a> | 
-                                📄 <a href="https://doi.org/10.1145/3748636.3764178" target="_blank">Cultural Ecosystem Services DOI</a> | 
-                                🔗 <a href="https://sigspatial2025.sigspatial.org/application-accepted/" target="_blank">Conference Link</a>
-                            </p>
-                        </li>                        
-                        <!-------------------------------------------------------------------------------------------->
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[June 5-6, 2025]: </span>
-                                Congratulations to <b>Joseph Benjamin and Hao-Yu Liao</b> for presenting our research at the 
-                                <b>Resilience in Urban Environments toward SDG Sustainable Cities</b> conference in Cuenca, Ecuador 🌍! 
-                                Their poster, titled <i>“Modelling the inequitable distribution of aesthetic green views across dimensions of supply, demand, accessibility, and flow”</i>, 
-                                sheds light on how urban green aesthetics are unevenly distributed and why this matters for equitable and sustainable city design 🌱. 
-                                Amazing work by the team!
-                            </p>
-                            <div class="thumb-row">
-                                <a href="img/publications/2025_06/joseph.png" target="_blank">
-                                    <img src="img/publications/2025_06/joseph.png" alt="conf_jo" class="thumb">
-                                </a>
-                                <a href="img/publications/2025_06/joseph_2.jpg" target="_blank">
-                                    <img src="img/publications/2025_06/joseph_2.jpg" alt="conf_jo2" class="thumb">
-                                </a>
-                            </div>
-                        </li>
-                        <!-------------------------------------------------------------------------------------------->
-                         <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[April 21, 2025]: </span>
-                                Congratulations to <b>Joseph B. Benjamin</b> for winning first place in the undergraduate Three Minute Capstone (3MC) in Sustainability and the Built Environment (SBE) at University of Florida!! 🎉🎉👏
-                                Our research explores the spatial variability and interconnections of aesthetic green view (AGV) supply and flows in urban streetscapes, emphasizing their broader significance for urban greening initiatives &#127795.
-                                Joseph also have received scholarship to present our research at Resilience in the Built Environment 2025, which will be held at the Universidad de Cuenca on June 5th and 6th, 2025. Congats on all the achievement.
-
-                            </p>
-                            <div class="thumb-row">
-                                <a href="img/homes/Joey/Joey-1.jpg" target="_blank">
-                                    <img src="img/homes/Joey/Joey-1.jpg" alt="Mini 2" class="thumb">
-                                </a>
-                                <a href="img/homes/Joey/Joey-2.jpg" target="_blank">
-                                    <img src="img/homes/Joey/Joey-2.jpg" alt="Mini 3" class="thumb">
-                                </a>
-                                 <a href="img/homes/Joey/Joey-3.jpg" target="_blank">
-                                    <img src="img/homes/Joey/Joey-3.jpg" alt="Mini 3" class="thumb">
-                                </a>
-                            </div>
-
-                        </li>
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[April 12, 2025]: </span>
-                                Congratulations to <b>Olivia Zhang</b> for being the winner of the 2025 John R. and Fawn T. Dunkle Geography Award !! 🎉🎉👏 The Dunkle award honors the long-time service and devotion of Professor John R. Dunkle to the Department of Geography at the University of Florida.
-                                Olivia is pursuing a Bachelor of Science in Geography along with a dual degree in Data Science. She has shown sustained academic excellence, involvement in departmental and university activities, leadership and/or strong promise for graduate study.
-
-                            </p>
-                            <div class="thumb-row">
-                                <a href="img/homes/Olivia/Olivia-3.jpg" target="_blank">
-                                    <img src="img/homes/Olivia/Olivia-3.jpg" alt="Mini 2" style="width: 110px; height: 100px; border-radius: 4px;" class="thumb" />
-                                </a>
-                            </div>
-
-                        </li>
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[March 18, 2025]: </span>
-                                Congratulations to <b>Olivia Zhang</b> on receiving the esteemed AI University Scholars Award for 2025-2026 at the University of Florida! 🎉🎉👏
-                                This program was established to support outstanding undergraduate students venturing into the exciting world of academic research. As an AI University scholar in our lab, Olivia focuses on developing computer vision models to detect urban agriculture using both environmental and social sensing.
-                            </p>
-                            <div class="thumb-row">
-                                <a href="img/homes/Olivia/Olivia-1.jpg" target="_blank">
-                                    <img src="img/homes/Olivia/Olivia-1.jpg" alt="Mini 2" style="width: 110px; height: 100px; border-radius: 4px;" class="thumb" />
-                                </a>
-                            </div>
-
-                        </li>
-                       
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[September 20, 2024]: </span>
-                                Congratulations <b>Dr. Hao-Yu Liao</b> on winning the Travel Awards at our first-ever <a href="https://postdoc.aa.ufl.edu/pd-awards/pd-awards-2024/" target="_blank">UF Postdoctoral Affairs Awards Ceremony</a>! 🎉🎉🎉
-                            </p>
-                            <div class="thumb-row">
-                                <a href="img/homes/Haoyu/haoyu-1.jpg" target="_blank">
-                                    <img src="img/homes/Haoyu/haoyu-1.jpg" alt="Mini 2" class="thumb">
-                                </a>
-                                <a href="img/homes/Haoyu/haoyu-2.jpg" target="_blank">
-                                    <img src="img/homes/Haoyu/haoyu-2.jpg" alt="Mini 3" class="thumb">
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="card">
-                            <p class="text-small-margin">
-                                <span class="news-date">[March 18, 2024]: </span>
-                                Congratulations to <b>Joseph B. Benjamin</b> on receiving the esteemed AI Scholars Award for 2024-2025 at the University of Florida! 🎉🎉👏
-                                As an AI scholar in our lab, Joseph focuses on applying image segmentation models for cultural ecosystem services assessments in urban areas.
-                            </p>
-                        </li>
-
-                        <!-------------------------------------------------------------------------------------------->
-                        <!--
-                        <li>
-                            <p class="text-small-margin">
-                                <span style="color: #1b7677; font-weight:bold;">[June 2024]: </span>
-                                Please insert News for this month.
-                            </p>
-                        </li>
--->
-                        <!-------------------------------------------------------------------------------------------->
-                        <!--
-                        <li>
-                            <p class="text-small-margin">
-                                <span style="color: #1b7677; font-weight:bold;">[May 2024]: </span>
-                                Please insert News for this month.
-                            </p>
-                        </li>
--->
-                        <!-------------------------------------------------------------------------------------------->
-                        <!--
-                        <li>
-                            <p class="text-small-margin">
-                                <span style="color: #1b7677; font-weight:bold;">[April 2024]: </span>
-                                Please insert News for this month.
-                            </p>
-                        </li>
--->
-                        <!-------------------------------------------------------------------------------------------->
-                        <!--Use the following commented block code to add news-->
-                        <!-- <li>
-                          <p class="text-small-margin">
-                            <span style="color: #1b7677; font-weight:bold;">[April 2024]: </span>
-                            Description of the news.
-                          </p>
-                        </li> -->
-                        <!--Use the above commented block code to add news-->
-                    </ul>
-                    <!--
-                    <p class="text">
-                        For old news, please check this <a href="archived-news.html">archived news page</a>.
-                    </p>
--->
-                </div>
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Research Areas</span>
+                <h2 class="section-title">Our Research Focus</h2>
             </div>
-            <!--End News-->
-            <!-------------------------------------------------------------------------------------------->
-            <br><br><br>
-        </div>
-    </div>
-    <!-------------------------------------------------------------------------------------------->
-    <div class="banner">
-        <div class="banner-table flex-column">
-            <div class="flex-row">
-                <div class="flex-item flex-column">
-                    <h2 class="no-top-margin">Contact Us</h2>
-                    <p class="text no-bottom-margin">
-                        If you have any questions regarding our group and research feel free to contact us via the details provided below.
-                    </p>
-                    <p class="text no-bottom-margin">
-                        1604 McCarty Hall D, PO Box 110500, Gainesville, FL, 32611
-                    </p>
-                    <p class="text no-bottom-margin">
-                        Phone: +1 352-294-0994
-                    </p>
-                    <p class="text add-bottom-margin-large">
-                        Email: changzhao@ufl.edu
-                    </p>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Geospatial AI</h3>
+                    <p>Combining machine learning, deep learning, GIS, remote sensing, and field observation to quantify spatiotemporal dynamics of ecosystem services across urban and agricultural landscapes.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">🌿</div>
+                    <h3>Ecosystem Services</h3>
+                    <p>Incorporating socioeconomic data (census, surveys, social media, crowdsourced data) and qualitative methods into ecosystem service assessments to understand drivers and consequences on human health and well-being.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">🛰️</div>
+                    <h3>Remote Sensing</h3>
+                    <p>Utilizing GIS, remote sensing, and AI to support interdisciplinary applications in agriculture, public health and social sciences.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Spatial Modeling</h3>
+                    <p>Creating predictive models that integrate geospatial data with environmental variables to forecast ecosystem responses and support sustainable land use planning.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Big Data Analytics</h3>
+                    <p>Processing and analyzing large-scale geospatial datasets to extract meaningful insights about environmental patterns and ecosystem service flows.</p>
+                    <div class="card-hover-effect"></div>
+                </div>
+                <div class="research-card">
+                    <div class="card-icon">🔬</div>
+                    <h3>Environmental Informatics</h3>
+                    <p>Developing computational tools and frameworks for integrating diverse environmental data sources and knowledge systems to enhance decision-making.</p>
+                    <div class="card-hover-effect"></div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-------------------------------------------------------------------------------------------->
-</body></html>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Our Current Projects</h2>
+                <p style="color: var(--text-secondary); margin-top: 1rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Explore our ongoing research initiatives that combine geospatial AI, remote sensing, and ecosystem services to address real-world challenges.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="placeholder-icon">🌱</span>
+                            <p>Graphical Abstract</p>
+                            <small>Coming Soon</small>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title</h3>
+                        <p class="project-description">
+                            This is a placeholder for one of our exciting research projects. More details will be added soon!
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📦</span> Repository
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📄</span> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="placeholder-icon">🌍</span>
+                            <p>Graphical Abstract</p>
+                            <small>Coming Soon</small>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title</h3>
+                        <p class="project-description">
+                            This is a placeholder for one of our exciting research projects. More details will be added soon!
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📦</span> Repository
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📄</span> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="placeholder-icon">🤖</span>
+                            <p>Graphical Abstract</p>
+                            <small>Coming Soon</small>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Title</h3>
+                        <p class="project-description">
+                            This is a placeholder for one of our exciting research projects. More details will be added soon!
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📦</span> Repository
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <span>📄</span> Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">News</span>
+                <h2 class="section-title">Latest Updates</h2>
+            </div>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">October 2025</div>
+                    <div class="news-content">
+                        <h3>ACM SIGSPATIAL2025 Travel Award</h3>
+                        <p>Congratulations to <strong>Jiayi Song, Hao-Yu Liao</strong> 🎉 on receiving the highly competitive <strong>ACM SIGSPATIAL2025 Travel Award</strong>. Which had a total pool of 130+ applicants.</p>
+                        <div class="news-links">
+                            <a href="https://doi.org/10.1145/3748636.3764177" target="_blank">FoundationSoil DOI</a> | 
+                            <a href="https://doi.org/10.1145/3748636.3764178" target="_blank">Cultural Ecosystem Services DOI</a> | 
+                            <a href="https://sigspatial2025.sigspatial.org/application-accepted/" target="_blank">Conference Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">September 22, 2025</div>
+                    <div class="news-content">
+                        <h3>Journal Publication on Invasive Species Mapping</h3>
+                        <p>Congratulations to <strong>Jiayi Song, Hao-Yu Liao</strong> 🎉 on their latest <strong>journal publication</strong> in the <i>International Journal of Applied Earth Observation and Geoinformation</i>! Their paper, <i>"Mapping invasive <i>Opuntia stricta</i> in Kenya's Drylands using explainable machine learning with time-series remote sensing and geographic context"</i>, demonstrates how explainable AI and geospatial data can support ecological monitoring and invasive species management 🌵🌍.</p>
+                        <div class="news-images">
+                            <a href="img/publications/2025_09/opuntia_1.jpg" target="_blank"><img src="img/publications/2025_09/opuntia_1.jpg" alt="Opuntia Research"></a>
+                            <a href="img/publications/2025_09/opuntia_2.jpg" target="_blank"><img src="img/publications/2025_09/opuntia_2.jpg" alt="Opuntia Research"></a>
+                        </div>
+                        <div class="news-links">
+                            <a href="https://www.sciencedirect.com/science/article/pii/S156984322500514X" target="_blank">Read the article here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">September 10, 2025</div>
+                    <div class="news-content">
+                        <h3>Two Papers Accepted to SIGSPATIAL '25</h3>
+                        <p>Congratulations to <strong>Jiayi Song, Hao-Yu Liao</strong> 🎉 for having <strong>two papers accepted</strong> to the <i>33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '25)</i>, which will be held in Minneapolis, MN, USA from November 3–6, 2025! The first paper, <i>"FoundationSoil: Enhancing Soil Organic Carbon Mapping Using a Multi-Temporal Geospatial Foundation Model"</i>, introduces a foundation model for improving soil carbon mapping 🌱. The second paper, <i>"Mapping Cultural Ecosystem Services Using One-Shot In-Context Learning with Multimodal Large Language Models"</i>, explores how multimodal AI can capture cultural ecosystem services 🤖🌍.</p>
+                        <div class="news-links">
+                            <a href="https://doi.org/10.1145/3748636.3764177" target="_blank">FoundationSoil DOI</a> | 
+                            <a href="https://doi.org/10.1145/3748636.3764178" target="_blank">Cultural Ecosystem Services DOI</a> | 
+                            <a href="https://sigspatial2025.sigspatial.org/application-accepted/" target="_blank">Conference Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item news-item-hidden">
+                    <div class="news-date">June 5-6, 2025</div>
+                    <div class="news-content">
+                        <h3>Conference Presentation in Ecuador</h3>
+                        <p>Congratulations to <strong>Joseph Benjamin and Hao-Yu Liao</strong> for presenting our research at the <strong>Resilience in Urban Environments toward SDG Sustainable Cities</strong> conference in Cuenca, Ecuador 🌍! Their poster, titled <i>"Modelling the inequitable distribution of aesthetic green views across dimensions of supply, demand, accessibility, and flow"</i>, sheds light on how urban green aesthetics are unevenly distributed and why this matters for equitable and sustainable city design 🌱.</p>
+                        <div class="news-images">
+                            <a href="img/publications/2025_06/joseph.png" target="_blank"><img src="img/publications/2025_06/joseph.png" alt="Conference Presentation"></a>
+                            <a href="img/publications/2025_06/joseph_2.jpg" target="_blank"><img src="img/publications/2025_06/joseph_2.jpg" alt="Conference Presentation"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item news-item-hidden">
+                    <div class="news-date">April 21, 2025</div>
+                    <div class="news-content">
+                        <h3>First Place in 3MC Competition</h3>
+                        <p>Congratulations to <strong>Joseph B. Benjamin</strong> for winning first place in the undergraduate Three Minute Capstone (3MC) in Sustainability and the Built Environment (SBE) at University of Florida!! 🎉🎉👏 Our research explores the spatial variability and interconnections of aesthetic green view (AGV) supply and flows in urban streetscapes, emphasizing their broader significance for urban greening initiatives 🌳.</p>
+                        <div class="news-images">
+                            <a href="img/homes/Joey/Joey-1.jpg" target="_blank"><img src="img/homes/Joey/Joey-1.jpg" alt="Award"></a>
+                            <a href="img/homes/Joey/Joey-2.jpg" target="_blank"><img src="img/homes/Joey/Joey-2.jpg" alt="Award"></a>
+                            <a href="img/homes/Joey/Joey-3.jpg" target="_blank"><img src="img/homes/Joey/Joey-3.jpg" alt="Award"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item news-item-hidden">
+                    <div class="news-date">April 12, 2025</div>
+                    <div class="news-content">
+                        <h3>Dunkle Geography Award</h3>
+                        <p>Congratulations to <strong>Olivia Zhang</strong> for being the winner of the 2025 John R. and Fawn T. Dunkle Geography Award !! 🎉🎉👏 The Dunkle award honors the long-time service and devotion of Professor John R. Dunkle to the Department of Geography at the University of Florida. Olivia is pursuing a Bachelor of Science in Geography along with a dual degree in Data Science.</p>
+                        <div class="news-images">
+                            <a href="img/homes/Olivia/Olivia-3.jpg" target="_blank"><img src="img/homes/Olivia/Olivia-3.jpg" alt="Award"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item news-item-hidden">
+                    <div class="news-date">March 18, 2025</div>
+                    <div class="news-content">
+                        <h3>AI University Scholars Award</h3>
+                        <p>Congratulations to <strong>Olivia Zhang</strong> on receiving the esteemed AI University Scholars Award for 2025-2026 at the University of Florida! 🎉🎉👏 This program was established to support outstanding undergraduate students venturing into the exciting world of academic research. As an AI University scholar in our lab, Olivia focuses on developing computer vision models to detect urban agriculture using both environmental and social sensing.</p>
+                        <div class="news-images">
+                            <a href="img/homes/Olivia/Olivia-1.jpg" target="_blank"><img src="img/homes/Olivia/Olivia-1.jpg" alt="Award"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item news-item-hidden">
+                    <div class="news-date">September 20, 2024</div>
+                    <div class="news-content">
+                        <h3>Postdoctoral Travel Award</h3>
+                        <p>Congratulations <strong>Dr. Hao-Yu Liao</strong> on winning the Travel Awards at our first-ever <a href="https://postdoc.aa.ufl.edu/pd-awards/pd-awards-2024/" target="_blank">UF Postdoctoral Affairs Awards Ceremony</a>! 🎉🎉🎉</p>
+                        <div class="news-images">
+                            <a href="img/homes/Haoyu/haoyu-1.jpg" target="_blank"><img src="img/homes/Haoyu/haoyu-1.jpg" alt="Award"></a>
+                            <a href="img/homes/Haoyu/haoyu-2.jpg" target="_blank"><img src="img/homes/Haoyu/haoyu-2.jpg" alt="Award"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item news-item-hidden">
+                    <div class="news-date">March 18, 2024</div>
+                    <div class="news-content">
+                        <h3>AI Scholars Award 2024-2025</h3>
+                        <p>Congratulations to <strong>Joseph B. Benjamin</strong> on receiving the esteemed AI Scholars Award for 2024-2025 at the University of Florida! 🎉🎉👏 As an AI scholar in our lab, Joseph focuses on applying image segmentation models for cultural ecosystem services assessments in urban areas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="news-footer">
+                <button class="btn btn-outline" id="showMoreNews">See More News</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the Researchers</h2>
+            </div>
+            
+            <!-- Principal Investigator -->
+            <div class="team-section">
+                <h3 class="team-section-title">Principal Investigator</h3>
+                <div class="team-member-large">
+                    <div class="team-member-image">
+                        <img src="img/prof-img.jpg" alt="Dr. Chang Zhao">
+                    </div>
+                    <div class="team-member-info">
+                        <h3>Dr. Chang Zhao</h3>
+                        <p class="team-role">Assistant Professor of Ecosystem Services Artificial Intelligence (AI)</p>
+                        <p class="team-bio">Dr. Zhao is an Assistant Professor of Ecosystem Services Artificial Intelligence (AI) at the University of Florida. She received her Ph.D. in Geography from the University of Iowa in 2018 and her B.E. in Geodesy and Geomatics Engineering from Wuhan University in 2012. Prior to joining the University of Florida, she worked as a research methodologist in spatial data science at NORC at the University of Chicago.</p>
+                        <p class="team-bio">Her research interests include Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning). Her research and extension programs are interdisciplinary and employ a wide range of geospatial, statistical, and AI tools, as well as observational, modeling, and mixed approaches.</p>
+                        <div class="team-social">
+                            <a href="https://scholar.google.com/citations?hl=en&user=C9z9unYAAAAJ" target="_blank" class="social-link">Google Scholar</a>
+                            <a href="docs/CV_ChangZhao.pdf" target="_blank" class="social-link">CV</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Postdoctoral Associate -->
+            <div class="team-section">
+                <h3 class="team-section-title">Postdoctoral Associate</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Haoyu_Liao.png" alt="Hao-Yu Liao">
+                        </div>
+                        <div class="team-info">
+                            <h3>Hao-Yu Liao</h3>
+                            <p class="team-role">Postdoctoral Associate</p>
+                            <p class="team-bio-small">Hao-Yu Liao is a postdoctoral associate at the Agronomy department at UF/IFAS. Before joining the lab, he has a PhD degree in Environmental Engineering Sciences in the UF. He was an assistant researcher at National Taiwan University (NTU) from 2016 to 2019. Ecosystem Services, Carbon Storage and Sequestration, Recreational Activities, Machine Learning Algorithms, Optimization Methods, Data Analysis, and GeoAI are among his research interests.</p>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-empty"></div>
+                    <div class="team-card team-card-empty"></div>
+                </div>
+            </div>
+
+            <!-- Graduate Researchers -->
+            <div class="team-section">
+                <h3 class="team-section-title">Graduate Researchers</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/SongJiayi.jpg" alt="Song Jiayi">
+                        </div>
+                        <div class="team-info">
+                            <h3>Song Jiayi</h3>
+                            <p class="team-role">PhD Student</p>
+                            <p class="team-bio-small">Jiayi is a PhD student in the School of Natural Resources and Environment. He received his master's from the University of Florida, where he studied computer engineering. For his PhD, he is working in interdisciplinary ecology, studying how Artificial Intelligence, especially Deep Learning, is used in ecosystem modelling.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Levi_Hoskins.jpg" alt="Levi Hoskins">
+                        </div>
+                        <div class="team-info">
+                            <h3>Levi Hoskins</h3>
+                            <p class="team-role">PhD Student</p>
+                            <p class="team-bio-small">Levi is a PhD student in the School of Natural Resources and Environment and will be working on a PhD in interdisciplinary ecology. They received their bachelor's from Tulane University where they studied habitat fragmentation in the Chocó Rainforest of Ecuador. During their PhD, they will study how humans and migratory animals use urban greenspaces.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Mohanad.jpg" alt="Mohanad Diab">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mohanad Diab</h3>
+                            <p class="team-role">PhD Student</p>
+                            <p class="team-bio-small">Mohanad is a PhD student in the School of Natural Resources and Environment at the University of Florida, his main interests are related to artificial intelligence, remote sensing, and sustainability science. His research focuses on advancing learning theory and developing foundation models for geospatial and environmental applications.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Izhar.jpg" alt="Izhar Ahmad">
+                        </div>
+                        <div class="team-info">
+                            <h3>Izhar Ahmad</h3>
+                            <p class="team-role">PhD Student</p>
+                            <p class="team-bio-small">Izhar Ahmad is a PhD student at the University of Florida. He holds a Bachelor's in Civil Engineering and a Master's in Water Resources and Environmental Engineering. His doctoral research centers on mapping cover crops and evaluating their ecosystem services, particularly their influence on water quality, quantity, and nutrient cycling.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Sotiris.jpg" alt="Sotirios Kechagias">
+                        </div>
+                        <div class="team-info">
+                            <h3>Sotirios Kechagias</h3>
+                            <p class="team-role">PhD Candidate</p>
+                            <p class="team-bio-small">Sotirios is a first-year PhD candidate with a background in applied geology, earth observation, and AI-based soil mapping. His research focuses on monitoring temporal dynamic changes in soil properties driven by climate change and human interference.</p>
+                            <div class="team-social">
+                                <a href="mailto:skechagias@ufl.edu" class="social-link">Email</a>
+                                <a href="https://scholar.google.com/citations?user=MeXy9hYAAAAJ&hl=en" target="_blank" class="social-link">Google Scholar</a>
+                                <a href="https://www.linkedin.com/in/sotirios-kechagias/" target="_blank" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Joseph_Benjamin.jpg" alt="Joseph B. Benjamin">
+                        </div>
+                        <div class="team-info">
+                            <h3>Joseph B. Benjamin</h3>
+                            <p class="team-role">Undergraduate Researcher</p>
+                            <p class="team-bio-small">Joseph (Joey) Benjamin studies at the intersection of equitable spatial planning, AI technology, and environmentalism. Currently, he is a fourth-year Sustainability and the Built Environment + Geodesign undergraduate at the University of Florida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Undergraduate Researchers -->
+            <div class="team-section">
+                <h3 class="team-section-title">Undergraduate Researchers</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Olivia_Zhang.jpeg" alt="Olivia Zhang">
+                        </div>
+                        <div class="team-info">
+                            <h3>Olivia Zhang</h3>
+                            <p class="team-role">Undergraduate Student</p>
+                            <p class="team-bio-small">Olivia Zhang is an undergraduate student at the University of Florida studying Geography and Data Science and pursuing a certificate in Geographic AI. Having grown up in coastal cities, she is passionate about leveraging geospatial data to better understand human-environment interactions in a changing climate.</p>
+                        </div>
+                    </div>
+                    <div class="team-card team-card-empty"></div>
+                    <div class="team-card team-card-empty"></div>
+                </div>
+            </div>
+
+            <!-- Alumni -->
+            <div class="team-section">
+                <h3 class="team-section-title">Alumni</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Zhou_Tang.jpg" alt="Zhou Tang">
+                        </div>
+                        <div class="team-info">
+                            <h3>Zhou Tang</h3>
+                            <p class="team-role">Former Postdoctoral Associate</p>
+                            <p class="team-bio-small">Zhou (Joe) Tang was a postdoctoral associate at the Agronomy Department, University of Florida Institute of Food and Agricultural (UF/IFAS). He obtained his PhD degree in Crop and Soil Sciences from Washington State University.</p>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="img/Dinesh.jpg" alt="Dinesh Chowdary">
+                        </div>
+                        <div class="team-info">
+                            <h3>Dinesh Chowdary</h3>
+                            <p class="team-role">Alumni</p>
+                            <p class="team-bio-small">Dinesh graduated with a Master of Science in Computer Science from the University of Florida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Publications</span>
+                <h2 class="section-title">Peer-Reviewed Journal Publications</h2>
+            </div>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Mapping invasive <i>Opuntia stricta</i> in Kenya's Drylands using explainable machine learning with time-series remote sensing and geographic context</h3>
+                        <p class="pub-authors">Song, J., <strong>Zhao, C.</strong>, Oduor, K. T., Liao, H. Y., Tang, Z., Bretas, I. L., ... & Shao, W.</p>
+                        <p class="pub-journal"><i>International Journal of Applied Earth Observation and Geoinformation</i>, 144, 104867</p>
+                        <a href="https://doi.org/10.1016/j.jag.2025.104867" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3>Detection and mapping of Amaranthus spinosus L. in bermudagrass pastures using drone imagery and deep learning for a site-specific weed management</h3>
+                        <p class="pub-authors">Bretas, I. L., Dubeux, J. C. B., Jr., <strong>Zhao, C.</strong>, Queiroz, L. M. D., Flynn, S., Ingram, S., Oduor, K. T., Cruz, P. J. R., Ruiz-Moreno, M., Loures, D. R. S., Valente, D. S. M., & Chizzotti, F. H. M.</p>
+                        <p class="pub-journal"><i>Agronomy Journal</i>, 116, 990–1002</p>
+                        <a href="https://doi.org/10.1002/agj2.21545" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2022</div>
+                    <div class="pub-content">
+                        <h3>Making Sense of Sensor Data: How Local Environmental Conditions Add Value to Social Science Research</h3>
+                        <p class="pub-authors">English, N., <strong>Zhao, C.</strong>, Brown, K. L., Catlett, C., & Cagney, K.</p>
+                        <p class="pub-journal"><i>Social Science Computer Review</i>, 40(1), 179-194</p>
+                        <a href="https://doi.org/10.1177/0894439320920601" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2021</div>
+                    <div class="pub-content">
+                        <h3>Image Processing for Public Health Surveillance of Tobacco Point-of-Sale Advertising: Machine Learning–Based Methodology</h3>
+                        <p class="pub-authors">English, N., Anesetti-Rothermel, A., <strong>Zhao, C.</strong>, Latterner, A., Benson, A. F., Herman, P., … Schillo, B. A.</p>
+                        <p class="pub-journal"><i>Journal of Medical Internet Research</i>, 23(8), e24408</p>
+                        <a href="https://doi.org/10.2196/24408" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2020</div>
+                    <div class="pub-content">
+                        <h3>Modeling retailer-based exemptions in flavored tobacco sales restrictions: National estimates on the impact of product availability</h3>
+                        <p class="pub-authors">Schillo, B. A., Benson, A. F., Czaplicki, L., Anesetti-R., A., Kierstead, E. C., Simpson, R., Phelps, N. C., Herman, P., <strong>Zhao, C.</strong>, & Rose, S. W.</p>
+                        <p class="pub-journal"><i>BMJ Open</i>, 10(11), e040490</p>
+                        <a href="https://doi.org/10.1136/bmjopen-2020-040490" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2019</div>
+                    <div class="pub-content">
+                        <h3>Wild bees and urban agriculture: assessing pollinator supply and demand across urban landscapes</h3>
+                        <p class="pub-authors"><strong>Zhao, C.</strong>, Sander, H., & Hendrix, S.</p>
+                        <p class="pub-journal"><i>Urban Ecosystems</i>, 22(3), 455-470</p>
+                        <a href="https://doi.org/10.1007/s11252-019-0826-6" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2019</div>
+                    <div class="pub-content">
+                        <h3>Deep Neural Networks and Kernel Density Estimation for Detecting Human Activity Patterns from Geo-Tagged Images: A Case Study of Birdwatching on Flickr</h3>
+                        <p class="pub-authors">Koylu, C., <strong>Zhao, C.</strong>, & Shao, W.</p>
+                        <p class="pub-journal"><i>ISPRS International Journal of Geo-Information</i>, 8(1), 45</p>
+                        <a href="https://doi.org/10.3390/ijgi8010045" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2018</div>
+                    <div class="pub-content">
+                        <h3>Space-time analysis of high technology entrepreneurship: A comparison of California and New England</h3>
+                        <p class="pub-authors">Qian, H., & <strong>Zhao, C.</strong></p>
+                        <p class="pub-journal"><i>Applied Geography</i>, 95, 111–119</p>
+                        <a href="https://doi.org/10.1016/j.apgeog.2018.04.006" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2018</div>
+                    <div class="pub-content">
+                        <h3>Assessing the sensitivity of urban ecosystem service maps to input spatial data resolution and method choice</h3>
+                        <p class="pub-authors"><strong>Zhao, C.</strong>, & Sander, H. A.</p>
+                        <p class="pub-journal"><i>Landscape and Urban Planning</i>, 175, 11–22</p>
+                        <a href="https://doi.org/10.1016/j.landurbplan.2018.03.007" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2017</div>
+                    <div class="pub-content">
+                        <h3>Assessing the potential for raw meat to influence human colonization with Staphylococcus aureus</h3>
+                        <p class="pub-authors">Carrel, M., <strong>Zhao, C.</strong>, Thapaliya, D., Bitterman, P., Kates, A. E., Hanson, B. M., & Smith, T. C.</p>
+                        <p class="pub-journal"><i>Scientific Reports</i>, 7(1)</p>
+                        <a href="https://doi.org/10.1038/s41598-017-11423-6" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2017</div>
+                    <div class="pub-content">
+                        <h3>Comparisons of spatial and non-spatial models for predicting soil carbon content based on visible and near-infrared spectral technology</h3>
+                        <p class="pub-authors">Guo, L., <strong>Zhao, C.</strong>, Zhang, H.-T., Chen, Y., Linderman, M., Zhang, Q., & Liu, Y.</p>
+                        <p class="pub-journal"><i>Geoderma</i>, 285, 280–292</p>
+                        <a href="https://doi.org/10.1016/j.geoderma.2016.10.010" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2017</div>
+                    <div class="pub-content">
+                        <h3>Exploring the Role of the Spatial Characteristics of Visible and Near-Infrared Reflectance in Predicting Soil Organic Carbon Density</h3>
+                        <p class="pub-authors">Guo, L., Chen, Y., Shi, T., <strong>Zhao, C.</strong>, Liu, Y., Wang, S., & Zhang, H.</p>
+                        <p class="pub-journal"><i>ISPRS International Journal of Geo-Information</i>, 6(10), 308</p>
+                        <a href="https://doi.org/10.3390/ijgi6100308" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2016</div>
+                    <div class="pub-content">
+                        <h3>Dynamic Assessment of Current Management in an Intensively Managed Agroecosystem</h3>
+                        <p class="pub-authors">Wilson, C. G., Wacha, K. M., Papanicolaou, A. N. T., Sander, H. A., Freudenberg, V. B., Abban, B. K. B., & <strong>Zhao, C.</strong></p>
+                        <p class="pub-journal"><i>Journal of Contemporary Water Research & Education</i>, 158(1), 148–171</p>
+                        <a href="https://doi.org/10.1111/j.1936-704x.2016.03225.x" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2015</div>
+                    <div class="pub-content">
+                        <h3>Quantifying and Mapping the Supply of and Demand for Carbon Storage and Sequestration Service from Urban Trees</h3>
+                        <p class="pub-authors"><strong>Zhao, C.</strong>, & Sander, H. A.</p>
+                        <p class="pub-journal"><i>PLOS ONE</i>, 10(8), e0136392</p>
+                        <a href="https://doi.org/10.1371/journal.pone.0136392" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item publication-item-hidden">
+                    <div class="pub-year">2015</div>
+                    <div class="pub-content">
+                        <h3>Relative effects of geographically isolated wetlands on streamflow: a watershed-scale analysis</h3>
+                        <p class="pub-authors">Golden, H. E., Sander, H. A., Lane, C. R., <strong>Zhao, C.</strong>, Price, K., D'Amico, E., & Christensen, J. R.</p>
+                        <p class="pub-journal"><i>Ecohydrology</i>, 9(1), 21–38</p>
+                        <a href="https://doi.org/10.1002/eco.1608" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="publications-footer">
+                <button class="btn btn-outline" id="showMorePublications">See More Publications</button>
+            </div>
+
+            <div class="section-header" style="margin-top: 4rem;">
+                <h2 class="section-title">Peer-Reviewed Conference Proceedings</h2>
+            </div>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>FoundationSoil: Enhancing Soil Organic Carbon Mapping Using a Multi-Temporal Geospatial Foundation Model</h3>
+                        <p class="pub-authors">Jiayi Song, <strong>Zhao, C.</strong>, Hao-Yu Liao, & Wei Shao</p>
+                        <p class="pub-journal">In the <i>33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '25)</i>, November 3–6, Minneapolis, MN, USA</p>
+                        <a href="https://doi.org/10.1145/3748636.3764177" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Mapping Cultural Ecosystem Services Using One-Shot In-Context Learning with Multimodal Large Language Models</h3>
+                        <p class="pub-authors">Hao-Yu Liao, <strong>Zhao, C.</strong>, Jiayi Song, & Wei Shao</p>
+                        <p class="pub-journal">In the <i>33rd ACM International Conference on Advances in Geographic Information Systems (SIGSPATIAL '25)</i>, November 3–6, Minneapolis, MN, USA</p>
+                        <a href="https://doi.org/10.1145/3748636.3764178" target="_blank" class="pub-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3>Quantifying Heterogenous Ecosystem Services with Multi-label Soft Classification</h3>
+                        <p class="pub-authors">Tian, Z.H., Upchurch, J., Simon, G.A., Dubeux, J., Zare, A., <strong>Zhao, C.</strong>*, Harley, J.B.*</p>
+                        <p class="pub-journal">In the <i>44th IEEE IGARSS International Geoscience and Remote Sensing Symposium</i>, Greece</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="teaching">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Teaching</span>
+                <h2 class="section-title">Courses</h2>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/courses/ecosystem_services.jpg" alt="Ecosystem Services: Theory, Methods, and Practice">
+                    </div>
+                    <div class="course-content">
+                        <h3>AGR SWS 4932/6932</h3>
+                        <p class="course-title">Ecosystem Services: Theory, Methods, and Practice</p>
+                        <div class="course-details">
+                            <p><strong>Course Number:</strong> AGR SWS 4932/6932</p>
+                            <p><strong>Description:</strong> Ecosystem Services: Theory, Methods, and Practice</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="img/courses/geoai.png" alt="Geospatial AI for Sustainability Science">
+                    </div>
+                    <div class="course-content">
+                        <h3>AGR6932-CAM1</h3>
+                        <p class="course-title">Geospatial AI for Sustainability Science</p>
+                        <div class="course-details">
+                            <p><strong>Course Number:</strong> AGR6932-CAM1 (24230)</p>
+                            <p><strong>Term:</strong> Fall 2025</p>
+                            <p><strong>Description:</strong> Geospatial AI for Sustainability Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vacancies Section -->
+    <section id="vacancies" class="vacancies">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Vacancies</span>
+                <h2 class="section-title">Join Our Team</h2>
+            </div>
+            <div class="vacancy-item">
+                <h3>Funded PhD Position in Geospatial Artificial Intelligence, Crop Mapping, and Ecosystem Services</h3>
+                <p class="vacancy-location"><strong>Location:</strong> Gainesville, Florida, USA</p>
+                <p>Dr. Zhao's lab in the UF/IFAS Agronomy Department at the University of Florida is seeking a highly creative and motivated PhD student in the areas of Geospatial Artificial Intelligence, Crop Mapping, and Ecosystem Services. The successful candidate will conduct interdisciplinary research that integrates geospatial analysis with artificial intelligence for crop mapping and ecosystem services modeling.</p>
+                <p><strong>Research topics include but are not limited to:</strong></p>
+                <ul class="vacancy-list">
+                    <li>Linking in-situ ground observations, GIS, remote sensing with AI methods (e.g., deep learning such as convolutional neural networks) to map crop types and ecosystem services across landscapes.</li>
+                    <li>Develop web GIS and decision support tools related to land use, land management, and ecosystem services to inform cropping system resource management.</li>
+                </ul>
+                <p>The candidate is expected to conduct independent research, author peer-reviewed publications, engage in outreach activities, and present research results at professional conferences. The position offers a competitive stipend, a tuition waiver, and subsidized health insurance.</p>
+                <div class="vacancy-details">
+                    <a href="docs/PhD Position Zhao 2025 Fall.pdf" target="_blank" class="btn btn-outline">View Details (PDF)</a>
+                </div>
+                <p class="vacancy-contact"><strong>Please email Dr. Chang Zhao at <a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a>, clearly stating your reason for applying and summarizing your most relevant background.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get in Touch</span>
+                <h2 class="section-title">Connect With Us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>1604 McCarty Hall D<br>PO Box 110500<br>Gainesville, FL 32611</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p>+1 352-294-0994</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌍</span>
+                        <span class="logo-text">GeoAI Lab</span>
+                    </div>
+                    <p>Ecosystem Service and Geospatial Artificial Intelligence Lab<br>University of Florida</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Research</h4>
+                        <ul>
+                            <li><a href="#research">Research Areas</a></li>
+                            <li><a href="#publications">Publications</a></li>
+                            <li><a href="#news">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#vacancies">Vacancies</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GeoAI Lab, University of Florida. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

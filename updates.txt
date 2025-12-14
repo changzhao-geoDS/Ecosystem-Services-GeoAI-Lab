@@ -1,0 +1,12 @@
+1- Research into another tab; Shortcut to go to that portion which will show the projects we have. (Pending other changes)
+2- There are three current projects we can add. (I need those)
+3- Graphical abstract for each project. (DONE)
+4- Push to a new branch on github (DONE) (New repo created)
+5- Add a teaching tab, one picture for the course (DONE)
+6- Project tab (?) (DONE)
+7- Repo links in the projects tab (or paper tab) (DONE)
+8- Add new alumni (DONE)
+-------------------------
+9- New logo if available
+10- Projects needed
+
