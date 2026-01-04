@@ -1,0 +1,31 @@
+Lab News Tracker Updates
+========================
+
+Date Added: [Current Date]
+
+1. AGU Conference Poster Presentations (December 2025)
+   - Three poster presentations at AGU Fall Meeting 2025
+   
+   a) Hao-Yu Liao: "Mapping Cultural Ecosystem Service Flows from Crowdsourced Imagery: A Zero-Shot Learning Approach with the Vision–Language Model CLIP" (GC31H-0766)
+      Link: https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1981246
+   
+   b) Jiayi Song: "FoundationSoil: A GeoAI Framework for Mapping Soil Organic Carbon Stocks Using Foundation Models and Explainable Machine Learning" (GC31H-0769)
+      Link: https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1957845
+   
+   c) Mohanad Diab: "Calibrated Multi-Model Ensemble with Dynamic Thresholding and Weighted Box Fusion for Robust Object Detection in Noisy Remote Sensing Datasets" (GC31H-0770)
+      Link: https://agu.confex.com/agu/agu25/meetingapp.cgi/Paper/1978815
+   
+   Note: Added to website News section (December 2025) with full titles and author names
+
+2. Book Chapter Publication (2025)
+   - Book Chapter in Elsevier publication
+   - Link: https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780443338038000214
+   
+   Note: Added to website Publications section under "Book Chapters"
+
+---
+Please manually add these entries to Lab_News_Tracker.docx with full details including:
+- Author names
+- Paper/chapter titles
+- Full publication details
+

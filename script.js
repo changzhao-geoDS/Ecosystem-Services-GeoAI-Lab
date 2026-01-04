@@ -233,7 +233,14 @@ const initMosaicBackground = () => {
         'GroupPictures/IMG_5596.JPG',
         'GroupPictures/IMG_5598.JPG',
         'GroupPictures/IMG_5606.JPG',
-
+        // New images
+        'GroupPictures/20251103_122339.jpg',
+        'GroupPictures/Photo Dec 16 2025, 12 55 25 PM.jpg',
+        'GroupPictures/Photo Dec 16 2025, 8 52 00 AM.jpg',
+        'GroupPictures/Photo Dec 17 2025, 8 21 08 AM.jpg',
+        'GroupPictures/Photo Dec 17 2025, 8 22 37 AM.jpg',
+        'GroupPictures/Photo Dec 17 2025, 8 24 44 AM.jpg',
+        'GroupPictures/Photo Dec 18 2025, 12 36 07 PM.jpg',
     ];
 
     // Shuffle array for randomness
