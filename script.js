@@ -3,19 +3,68 @@
 // ============================================
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const body = document.body;
+
+// Create overlay element
+let navOverlay = null;
+if (window.innerWidth <= 768) {
+    navOverlay = document.createElement('div');
+    navOverlay.className = 'nav-overlay';
+    document.body.appendChild(navOverlay);
+}
 
 if (hamburger && navMenu) {
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
+    const toggleMenu = (isOpen) => {
+        if (isOpen) {
+            navMenu.classList.add('active');
+            hamburger.classList.add('active');
+            body.style.overflow = 'hidden';
+            if (navOverlay) navOverlay.classList.add('active');
+        } else {
             navMenu.classList.remove('active');
             hamburger.classList.remove('active');
+            body.style.overflow = '';
+            if (navOverlay) navOverlay.classList.remove('active');
+        }
+    };
+
+    hamburger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isOpen = !navMenu.classList.contains('active');
+        toggleMenu(isOpen);
+    });
+
+    // Close menu when clicking on overlay
+    if (navOverlay) {
+        navOverlay.addEventListener('click', () => {
+            toggleMenu(false);
         });
+    }
+
+    // Close menu when clicking on a link (but don't prevent tab switching)
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                toggleMenu(false);
+            }
+        });
+    });
+
+    // Close menu on window resize if it becomes desktop size
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            toggleMenu(false);
+            if (navOverlay && navOverlay.parentNode) {
+                navOverlay.parentNode.removeChild(navOverlay);
+            }
+        } else if (window.innerWidth <= 768 && !navOverlay) {
+            navOverlay = document.createElement('div');
+            navOverlay.className = 'nav-overlay';
+            document.body.appendChild(navOverlay);
+            navOverlay.addEventListener('click', () => {
+                toggleMenu(false);
+            });
+        }
     });
 }
 
@@ -38,22 +87,47 @@ window.addEventListener('scroll', () => {
 });
 
 // ============================================
-// Smooth Scrolling for Anchor Links
+// Tab Switching Functionality
 // ============================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        
-        if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
+const initTabs = () => {
+    const tabLinks = document.querySelectorAll('.nav-link[data-tab]');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            const targetTab = link.getAttribute('data-tab');
+            
+            // Remove active class from all links and contents
+            tabLinks.forEach(l => l.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked link and corresponding content
+            link.classList.add('active');
+            const targetContent = document.getElementById(`tab-${targetTab}`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+                // Scroll to top of page
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Handle buttons with data-tab attribute
+    document.querySelectorAll('[data-tab]').forEach(button => {
+        if (button.tagName === 'A' || button.tagName === 'BUTTON') {
+            button.addEventListener('click', (e) => {
+                const targetTab = button.getAttribute('data-tab');
+                const targetLink = document.querySelector(`.nav-link[data-tab="${targetTab}"]`);
+                if (targetLink) {
+                    e.preventDefault();
+                    targetLink.click();
+                }
             });
         }
     });
-});
+};
 
 // ============================================
 // Animated Counter for Stats
@@ -164,46 +238,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ============================================
-// Active Navigation Link Highlighting
-// ============================================
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-link');
-
-const highlightNav = () => {
-    const scrollY = window.pageYOffset;
-
-    sections.forEach(section => {
-        const sectionHeight = section.offsetHeight;
-        const sectionTop = section.offsetTop - 100;
-        const sectionId = section.getAttribute('id');
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${sectionId}`) {
-                    link.classList.add('active');
-                }
-            });
-        }
-    });
-};
-
-window.addEventListener('scroll', highlightNav);
-
-// ============================================
-// Add active state styling via CSS class
-// ============================================
-const style = document.createElement('style');
-style.textContent = `
-    .nav-link.active {
-        color: var(--primary-green);
-    }
-    .nav-link.active::after {
-        width: 100%;
-    }
-`;
-document.head.appendChild(style);
 
 // ============================================
 // Mosaic Background
@@ -299,6 +333,9 @@ const initShowMorePublications = () => {
 // Initialize on page load
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize tabs
+    initTabs();
+    
     // Initialize mosaic background
     initMosaicBackground();
     

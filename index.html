@@ -14,15 +14,12 @@
     <nav class="navbar">
         <div class="nav-container">
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#research" class="nav-link">Research</a></li>
-                <li><a href="#news" class="nav-link">News</a></li>
-                <li><a href="#team" class="nav-link">Team</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#teaching" class="nav-link">Teaching</a></li>
-                <li><a href="#vacancies" class="nav-link">Vacancies</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link active" data-tab="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-tab="research">Research</a></li>
+                <li><a href="#" class="nav-link" data-tab="team">Team</a></li>
+                <li><a href="#" class="nav-link" data-tab="publications">Publications</a></li>
+                <li><a href="#" class="nav-link" data-tab="teaching">Teaching</a></li>
+                <li><a href="#" class="nav-link" data-tab="vacancies">Vacancies</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -32,136 +29,65 @@
         </div>  
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="mosaic-background" id="mosaicBackground">
-                <!-- Images will be added via JavaScript -->
-            </div>
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge">University of Florida</div>
-            <h1 class="hero-title">
-                <span class="title-line">Ecosystem Services</span>
-                <span class="title-line highlight">GeoAI Lab</span>
-            </h1>
-            <p class="hero-subtitle">
-                We research on Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning). The ultimate goals of this research group is to advance scientific understanding of where and how nature provides benefits to human societies, and to produce actionable knowledge and develop solutions to enhance sustainable land use planning and management across the continuum of urban and rural systems.
-            </p>
-            <div class="hero-buttons">
-                <a href="#research" class="btn btn-primary">Explore Research</a>
-                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse"></div>
-        </div>
-    </section>
+    <!-- Tab Content Container -->
+    <div class="tab-container">
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About Us</span>
-                <h2 class="section-title">Pioneering Geospatial Intelligence</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        The Ecosystem Services and Geospatial Artificial Intelligence (GeoAI) Lab at the University of Florida 
-                        is at the forefront of integrating advanced AI technologies with geospatial analysis to understand 
-                        and model ecosystem services.
+        <!-- Home Tab (with News) -->
+        <div id="tab-home" class="tab-content active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="mosaic-background" id="mosaicBackground">
+                        <!-- Images will be added via JavaScript -->
+                    </div>
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-badge">University of Florida</div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Ecosystem Services</span>
+                        <span class="title-line highlight">GeoAI Lab</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We research on Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning). The ultimate goals of this research group is to advance scientific understanding of where and how nature provides benefits to human societies, and to produce actionable knowledge and develop solutions to enhance sustainable land use planning and management across the continuum of urban and rural systems.
                     </p>
-                    <p>
-                        Our research bridges the gap between artificial intelligence, remote sensing, and environmental science, 
-                        creating innovative solutions for understanding complex ecological systems and their services to humanity. 
-                        We employ a wide range of geospatial, statistical, and AI tools, as well as observational, modeling, and mixed approaches.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <div class="stat-number" data-target="14">0</div>
-                            <div class="stat-label">Publications</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number" data-target="10">0</div>
-                            <div class="stat-label">Team Members</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number" data-target="3">0</div>
-                            <div class="stat-label">Conference Papers</div>
-                        </div>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary" data-tab="research">Explore Research</a>
+                        <a href="#" class="btn btn-secondary" data-tab="publications">Latest Publications</a>
                     </div>
                 </div>
-                <div class="about-visual">
-                    <div class="visual-card">
-                        <div class="card-glow"></div>
-                        <div class="map-pattern"></div>
+                <div class="scroll-indicator">
+                    <div class="mouse"></div>
+                </div>
+            </section>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="research">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Research Areas</span>
-                <h2 class="section-title">Our Research Focus</h2>
-            </div>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="card-icon">🤖</div>
-                    <h3>Geospatial AI</h3>
-                    <p>Combining machine learning, deep learning, GIS, remote sensing, and field observation to quantify spatiotemporal dynamics of ecosystem services across urban and agricultural landscapes.</p>
-                    <div class="card-hover-effect"></div>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">🌿</div>
-                    <h3>Ecosystem Services</h3>
-                    <p>Incorporating socioeconomic data (census, surveys, social media, crowdsourced data) and qualitative methods into ecosystem service assessments to understand drivers and consequences on human health and well-being.</p>
-                    <div class="card-hover-effect"></div>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">🛰️</div>
-                    <h3>Remote Sensing</h3>
-                    <p>Utilizing GIS, remote sensing, and AI to support interdisciplinary applications in agriculture, public health and social sciences.</p>
-                    <div class="card-hover-effect"></div>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">📊</div>
-                    <h3>Spatial Modeling</h3>
-                    <p>Creating predictive models that integrate geospatial data with environmental variables to forecast ecosystem responses and support sustainable land use planning.</p>
-                    <div class="card-hover-effect"></div>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">🌐</div>
-                    <h3>Big Data Analytics</h3>
-                    <p>Processing and analyzing large-scale geospatial datasets to extract meaningful insights about environmental patterns and ecosystem service flows.</p>
-                    <div class="card-hover-effect"></div>
-                </div>
-                <div class="research-card">
-                    <div class="card-icon">🔬</div>
-                    <h3>Environmental Informatics</h3>
-                    <p>Developing computational tools and frameworks for integrating diverse environmental data sources and knowledge systems to enhance decision-making.</p>
-                    <div class="card-hover-effect"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- News Section -->
-    <section id="news" class="news">
+            <!-- News Section (in Home Tab) -->
+            <section class="news">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">News</span>
                 <h2 class="section-title">Latest Updates</h2>
             </div>
             <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">January 2026</div>
+                    <div class="news-content">
+                        <h3>Now Recruiting: Undergraduate Research Opportunities</h3>
+                        <p>We are currently looking for motivated undergraduate students to join our lab! We have <strong>two exciting paid opportunities</strong> available:</p>
+                        <ul style="list-style: none; padding-left: 0; margin: 1rem 0;">
+                            <li style="margin-bottom: 1rem;">
+                                <strong>AI Scholar Program:</strong> Open to all UF undergraduate students (any major). This paid research position allows you to work on cutting-edge geospatial AI and ecosystem services projects while gaining valuable research experience.
+                            </li>
+                            <li style="margin-bottom: 1rem;">
+                                <strong>IFAS/CALS Summer Internship:</strong> A paid summer internship ($15/hour, up to 240 hours) for CALS students to work on our USDA-funded cover crop mapping project. Applications due <strong>February 20, 2026</strong>.
+                            </li>
+                        </ul>
+                        <p>We also offer <strong>undergraduate research credit hours</strong> for students who want to gain research experience while earning academic credit.</p>
+                        <div class="news-links">
+                            <a href="#" data-tab="vacancies" style="color: var(--primary-green); text-decoration: none; font-weight: 500;">View All Opportunities →</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="news-item">
                     <div class="news-date">December 12, 2025</div>
                     <div class="news-content">
@@ -316,37 +242,132 @@
                 <button class="btn btn-outline" id="showMoreNews">See More News</button>
             </div>
         </div>
-    </section>
+            </section>
+        </div>
 
-    <!-- Team Section -->
-    <section id="team" class="team">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Team</span>
-                <h2 class="section-title">Meet the Researchers</h2>
-            </div>
-            
-            <!-- Principal Investigator -->
-            <div class="team-section">
-                <h3 class="team-section-title">Principal Investigator</h3>
-                <div class="team-member-large">
-                    <div class="team-member-image">
-                        <img src="img/prof-img.jpg" alt="Dr. Chang Zhao">
+        <!-- Research Tab (Combined About + Research with PI Info) -->
+        <div id="tab-research" class="tab-content">
+            <section class="research">
+                <div class="container">
+                    <!-- Principal Investigator Info -->
+                    <div class="pi-intro">
+                        <div class="pi-content">
+                            <div class="pi-image">
+                                <img src="img/prof-img.jpg" alt="Dr. Chang Zhao">
+                            </div>
+                            <div class="pi-text">
+                                <h2 class="pi-name">Dr. Chang Zhao</h2>
+                                <p class="pi-role">Assistant Professor of Ecosystem Services Artificial Intelligence (AI)</p>
+                                <p class="pi-bio">Dr. Zhao is an Assistant Professor of Ecosystem Services Artificial Intelligence (AI) at the University of Florida. She received her Ph.D. in Geography from the University of Iowa in 2018 and her B.E. in Geodesy and Geomatics Engineering from Wuhan University in 2012. Prior to joining the University of Florida, she worked as a research methodologist in spatial data science at NORC at the University of Chicago. Her research interests include Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning).</p>
+                                <div class="pi-social">
+                                    <a href="mailto:changzhao@ufl.edu" class="social-link">Email</a>
+                                    <a href="https://scholar.google.com/citations?hl=en&user=C9z9unYAAAAJ" target="_blank" class="social-link">Google Scholar</a>
+                                    <a href="docs/CV_ChangZhao.pdf" target="_blank" class="social-link">CV</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="team-member-info">
-                        <h3>Dr. Chang Zhao</h3>
-                        <p class="team-role">Assistant Professor of Ecosystem Services Artificial Intelligence (AI)</p>
-                        <p class="team-bio">Dr. Zhao is an Assistant Professor of Ecosystem Services Artificial Intelligence (AI) at the University of Florida. She received her Ph.D. in Geography from the University of Iowa in 2018 and her B.E. in Geodesy and Geomatics Engineering from Wuhan University in 2012. Prior to joining the University of Florida, she worked as a research methodologist in spatial data science at NORC at the University of Chicago.</p>
-                        <p class="team-bio">Her research interests include Geographic Information Science, Remote Sensing, Geovisualization, Ecosystem Service Assessments, and AI (Machine Learning and Deep Learning). Her research and extension programs are interdisciplinary and employ a wide range of geospatial, statistical, and AI tools, as well as observational, modeling, and mixed approaches.</p>
-                        <div class="team-social">
-                            <a href="https://scholar.google.com/citations?hl=en&user=C9z9unYAAAAJ" target="_blank" class="social-link">Google Scholar</a>
-                            <a href="docs/CV_ChangZhao.pdf" target="_blank" class="social-link">CV</a>
+
+                    <!-- About the Lab -->
+                    <div class="section-header" style="margin-top: 4rem;">
+                        <span class="section-tag">About Our Lab</span>
+                        <h2 class="section-title">Pioneering Geospatial Intelligence</h2>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p class="lead">
+                                The Ecosystem Services and Geospatial Artificial Intelligence (GeoAI) Lab at the University of Florida 
+                                is at the forefront of integrating advanced AI technologies with geospatial analysis to understand 
+                                and model ecosystem services.
+                            </p>
+                            <p>
+                                Our research bridges the gap between artificial intelligence, remote sensing, and environmental science, 
+                                creating innovative solutions for understanding complex ecological systems and their services to humanity. 
+                                We employ a wide range of geospatial, statistical, and AI tools, as well as observational, modeling, and mixed approaches.
+                            </p>
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="14">0</div>
+                                    <div class="stat-label">Publications</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="10">0</div>
+                                    <div class="stat-label">Team Members</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number" data-target="3">0</div>
+                                    <div class="stat-label">Conference Papers</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-visual">
+                            <div class="visual-card">
+                                <div class="card-glow"></div>
+                                <div class="map-pattern"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research Areas -->
+                    <div class="section-header" style="margin-top: 4rem;">
+                        <span class="section-tag">Research Areas</span>
+                        <h2 class="section-title">Our Research Focus</h2>
+                    </div>
+                    <div class="research-grid">
+                        <div class="research-card">
+                            <div class="card-icon">🤖</div>
+                            <h3>Geospatial AI</h3>
+                            <p>Combining machine learning, deep learning, GIS, remote sensing, and field observation to quantify spatiotemporal dynamics of ecosystem services across urban and agricultural landscapes.</p>
+                            <div class="card-hover-effect"></div>
+                        </div>
+                        <div class="research-card">
+                            <div class="card-icon">🌿</div>
+                            <h3>Ecosystem Services</h3>
+                            <p>Incorporating socioeconomic data (census, surveys, social media, crowdsourced data) and qualitative methods into ecosystem service assessments to understand drivers and consequences on human health and well-being.</p>
+                            <div class="card-hover-effect"></div>
+                        </div>
+                        <div class="research-card">
+                            <div class="card-icon">🛰️</div>
+                            <h3>Remote Sensing</h3>
+                            <p>Utilizing GIS, remote sensing, and AI to support interdisciplinary applications in agriculture, public health and social sciences.</p>
+                            <div class="card-hover-effect"></div>
+                        </div>
+                        <div class="research-card">
+                            <div class="card-icon">📊</div>
+                            <h3>Spatial Modeling</h3>
+                            <p>Creating predictive models that integrate geospatial data with environmental variables to forecast ecosystem responses and support sustainable land use planning.</p>
+                            <div class="card-hover-effect"></div>
+                        </div>
+                        <div class="research-card">
+                            <div class="card-icon">🌐</div>
+                            <h3>Big Data Analytics</h3>
+                            <p>Processing and analyzing large-scale geospatial datasets to extract meaningful insights about environmental patterns and ecosystem service flows.</p>
+                            <div class="card-hover-effect"></div>
+                        </div>
+                        <div class="research-card">
+                            <div class="card-icon">🔬</div>
+                            <h3>Environmental Informatics</h3>
+                            <p>Developing computational tools and frameworks for integrating diverse environmental data sources and knowledge systems to enhance decision-making.</p>
+                            <div class="card-hover-effect"></div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </div>
 
-            <!-- Postdoctoral Associate -->
+        <!-- Team Tab -->
+        <div id="tab-team" class="tab-content">
+            <section class="team">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Our Team</span>
+                        <h2 class="section-title">Meet the Researchers</h2>
+                    </div>
+                    <div class="team-header-button">
+                        <a href="#" class="btn btn-primary" data-tab="vacancies">View Open Positions</a>
+                    </div>
+            
+                    <!-- Postdoctoral Associate -->
             <div class="team-section">
                 <h3 class="team-section-title">Postdoctoral Associate</h3>
                 <div class="team-grid">
@@ -483,10 +504,12 @@
                 </div>
             </div>
         </div>
-    </section>
+            </section>
+        </div>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
+        <!-- Publications Tab -->
+        <div id="tab-publications" class="tab-content">
+            <section class="publications">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Publications</span>
@@ -680,10 +703,12 @@
                 </div>
             </div>
         </div>
-    </section>
+            </section>
+        </div>
 
-    <!-- Teaching Section -->
-    <section id="teaching" class="teaching">
+        <!-- Teaching Tab -->
+        <div id="tab-teaching" class="tab-content">
+            <section class="teaching">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Teaching</span>
@@ -719,53 +744,114 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Vacancies Section -->
-    <section id="vacancies" class="vacancies">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Vacancies</span>
-                <h2 class="section-title">Join Our Team</h2>
-            </div>
-            <div class="vacancy-item">
-                <h3>PhD Opportunities</h3>
-                <p class="vacancy-location"><strong>Location:</strong> Gainesville, Florida, USA</p>
-                <p>Dr. Zhao's lab in the UF/IFAS Agronomy Department at the University of Florida is always looking for highly creative and motivated PhD candidates interested in Geospatial Artificial Intelligence, Remote Sensing, Ecosystem Services, and related interdisciplinary research areas.</p>
-                <p>Our research integrates geospatial analysis with artificial intelligence, machine learning, and deep learning to address critical questions in ecosystem services, crop mapping, environmental monitoring, and sustainable land management.</p>
-                <p class="vacancy-contact"><strong>Interested candidates should contact Dr. Chang Zhao at <a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a> to discuss potential opportunities.</strong></p>
-            </div>
+            </section>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Get in Touch</span>
-                <h2 class="section-title">Connect With Us</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">📍</div>
-                        <h3>Location</h3>
-                        <p>1604 McCarty Hall D<br>PO Box 110500<br>Gainesville, FL 32611</p>
+        <!-- Vacancies Tab -->
+        <div id="tab-vacancies" class="tab-content">
+            <section class="vacancies">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag">Vacancies</span>
+                        <h2 class="section-title">Join Our Team</h2>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">✉️</div>
-                        <h3>Email</h3>
-                        <p><a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a></p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-icon">📞</div>
-                        <h3>Phone</h3>
-                        <p>+1 352-294-0994</p>
+                    <div class="vacancies-grid">
+                        <!-- PhD Opportunities -->
+                        <div class="vacancy-card vacancy-card-horizontal">
+                            <div class="vacancy-card-left">
+                                <div class="vacancy-badge">Graduate</div>
+                                <h3>PhD Opportunities</h3>
+                                <p class="vacancy-type">Graduate Research Position</p>
+                            </div>
+                            <div class="vacancy-card-right">
+                                <div class="vacancy-content">
+                                    <p><strong>Location:</strong> Gainesville, Florida, USA</p>
+                                    <p>Dr. Zhao's lab in the UF/IFAS Agronomy Department at the University of Florida is always looking for highly creative and motivated PhD candidates interested in Geospatial Artificial Intelligence, Remote Sensing, Ecosystem Services, and related interdisciplinary research areas.</p>
+                                    <p>Our research integrates geospatial analysis with artificial intelligence, machine learning, and deep learning to address critical questions in ecosystem services, crop mapping, environmental monitoring, and sustainable land management.</p>
+                                </div>
+                                <div class="vacancy-footer">
+                                    <p class="vacancy-contact-text">Interested candidates should contact <a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a> to discuss potential opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI Scholar Program -->
+                        <div class="vacancy-card vacancy-card-horizontal">
+                            <div class="vacancy-card-left">
+                                <div class="vacancy-badge">Undergraduate</div>
+                                <h3>AI Scholar Program</h3>
+                                <p class="vacancy-type">Paid Research Position</p>
+                            </div>
+                            <div class="vacancy-card-right">
+                                <div class="vacancy-content">
+                                    <p><strong>Eligibility:</strong> UF undergraduate students (any major)</p>
+                                    <p>The AI Scholar Program is an exclusive opportunity for University of Florida undergraduates to conduct research in our lab. This is a paid position open to students from any major who are interested in geospatial AI, remote sensing, and ecosystem services research.</p>
+                                    <p>As an AI Scholar, you'll work alongside graduate students and faculty on cutting-edge research projects, gaining valuable experience in artificial intelligence, machine learning, and geospatial analysis. The program includes a $1,750 stipend paid over two semesters.</p>
+                                </div>
+                                <div class="vacancy-footer">
+                                    <p class="vacancy-contact-text">For more information and to apply, contact <a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a> and visit the <a href="https://ai.ufl.edu/for-our-students/ai-scholars/" target="_blank">AI Scholars Program website</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IFAS/CALS Summer Internship -->
+                        <div class="vacancy-card vacancy-card-horizontal">
+                            <div class="vacancy-card-left">
+                                <div class="vacancy-badge">Undergraduate</div>
+                                <h3>IFAS/CALS Summer Internship</h3>
+                                <p class="vacancy-type">Paid Summer Internship - Cover Crop Mapping Project</p>
+                            </div>
+                            <div class="vacancy-card-right">
+                                <div class="vacancy-content">
+                                    <p><strong>Eligibility:</strong> CALS undergraduate students</p>
+                                    <p><strong>Deadline:</strong> February 20, 2026</p>
+                                    <p><strong>Duration:</strong> July 1, 2026 - June 30, 2027 (up to 240 hours)</p>
+                                    <p><strong>Compensation:</strong> $15 per hour</p>
+                                    <p>Join our USDA-funded cover crop mapping project for Florida. Work on satellite image data preprocessing, data annotation, data analysis, and visualization of agricultural monitoring data. This internship focuses on Earth observation-based cover crop mapping and monitoring, and agroecosystem services modeling.</p>
+                                    <p><strong>Requirements:</strong></p>
+                                    <ul>
+                                        <li>Undergraduate in a College of Agricultural and Life Sciences major</li>
+                                        <li>Background in GIS, Remote Sensing, Python, and basic understanding of AI</li>
+                                        <li>Available for summer</li>
+                                    </ul>
+                                </div>
+                                <div class="vacancy-footer">
+                                    <a href="docs/ifas_summer_internship_flyer.pdf" target="_blank" class="btn btn-outline">View Flyer</a>
+                                    <a href="https://cals.ufl.edu/involvement/research/internship/" target="_blank" class="btn btn-primary">Apply Here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Undergraduate Research Credit Hours -->
+                        <div class="vacancy-card vacancy-card-horizontal">
+                            <div class="vacancy-card-left">
+                                <div class="vacancy-badge">Undergraduate</div>
+                                <h3>Undergraduate Research Credit Hours</h3>
+                                <p class="vacancy-type">Research Experience & Academic Credit</p>
+                            </div>
+                            <div class="vacancy-card-right">
+                                <div class="vacancy-content">
+                                    <p>Prospective undergraduate students who want to work in our lab can gain research experience and academic credit through undergraduate research credit hours.</p>
+                                    <p>This opportunity allows you to:</p>
+                                    <ul>
+                                        <li>Work on real research projects in geospatial AI and ecosystem services</li>
+                                        <li>Receive mentorship from faculty and graduate students</li>
+                                        <li>Earn academic credit while building your research portfolio</li>
+                                        <li>Explore potential career paths in research and academia</li>
+                                    </ul>
+                                    <p>Open to all undergraduate students interested in our research areas, regardless of major.</p>
+                                </div>
+                                <div class="vacancy-footer">
+                                    <p class="vacancy-contact-text">Interested students should contact <a href="mailto:changzhao@ufl.edu">changzhao@ufl.edu</a> to learn more.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
+
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -774,32 +860,31 @@
                 <div class="footer-brand">
                     <div class="footer-logo">
                         <span class="logo-icon">🌍</span>
-                        <span class="logo-text">GeoAI Lab</span>
+                        <span class="logo-text">ES-GeoAI Lab</span>
                     </div>
-                    <p>Ecosystem Service and Geospatial Artificial Intelligence Lab<br>University of Florida</p>
+                    <p>Ecosystem Services and Geospatial Artificial Intelligence Lab<br>University of Florida</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Research</h4>
+                        <h4>Navigation</h4>
                         <ul>
-                            <li><a href="#research">Research Areas</a></li>
-                            <li><a href="#publications">Publications</a></li>
-                            <li><a href="#news">News</a></li>
+                            <li><a href="#" data-tab="home">Home</a></li>
+                            <li><a href="#" data-tab="research">Research</a></li>
+                            <li><a href="#" data-tab="team">Team</a></li>
+                            <li><a href="#" data-tab="publications">Publications</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <h4>About</h4>
+                        <h4>More</h4>
                         <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#vacancies">Vacancies</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#" data-tab="teaching">Teaching</a></li>
+                            <li><a href="#" data-tab="vacancies">Vacancies</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 GeoAI Lab, University of Florida. All rights reserved.</p>
+                <p>&copy; 2026 GeoAI Lab, University of Florida. All rights reserved.</p>
             </div>
         </div>
     </footer>
