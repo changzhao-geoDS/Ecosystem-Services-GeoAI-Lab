@@ -939,6 +939,18 @@ section {
     transition: all 0.3s ease;
 }
 
+a.course-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+a.course-card:focus-visible {
+    outline: 3px solid var(--primary-green);
+    outline-offset: 3px;
+}
+
 .course-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg);
@@ -1015,6 +1027,13 @@ section {
 
 .course-details p {
     margin-bottom: 0.5rem;
+}
+
+.course-syllabus-link {
+    margin-top: 1rem;
+    margin-bottom: 0 !important;
+    font-weight: 600;
+    color: var(--primary-green);
 }
 
 .course-details strong {
