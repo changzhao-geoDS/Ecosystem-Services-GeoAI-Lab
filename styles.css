@@ -1068,9 +1068,10 @@ a.course-card:focus-visible {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1.5rem;
-    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .team-card-empty {
@@ -1079,60 +1080,100 @@ a.course-card:focus-visible {
 }
 
 .team-card {
-    background: var(--light-bg);
-    border-radius: 16px;
+    background: var(--white);
+    border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-sm);
-    max-width: 100%;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
     box-shadow: var(--shadow-md);
 }
 
 .team-image {
-    width: 100%;
-    aspect-ratio: 1;
-    background: var(--gradient-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 250px;
+    width: 160px;
+    height: 160px;
+    margin: 1.25rem auto 0;
+    padding: 0;
+    background: transparent;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
 }
 
-.image-placeholder {
-    font-size: 4rem;
-    opacity: 0.8;
+.team-card .team-image {
+    width: 160px;
+    height: 160px;
+    margin: 1.25rem auto 0;
+    padding: 0;
+    background: transparent;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.team-card .team-image img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    image-rendering: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 .team-info {
-    padding: 1.5rem;
+    padding: 1rem 1.25rem 1.25rem;
     text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .team-info h3 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
+    line-height: 1.3;
 }
 
 .team-role {
     color: var(--text-secondary);
-    font-size: 0.8125rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.65rem;
     font-weight: 500;
+    line-height: 1.4;
 }
 
 .team-social {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 0.5rem;
 }
 
 .social-link {
@@ -1544,26 +1585,15 @@ a.course-card:focus-visible {
 
 .team-bio-small {
     color: var(--text-secondary);
-    line-height: 1.6;
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
+    line-height: 1.55;
+    font-size: 0.8125rem;
+    margin-top: 0;
+    text-align: left;
 }
 
-.team-card .team-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-}
-
-.team-card .team-image {
-    width: 100%;
-    aspect-ratio: 1;
-    background: var(--gradient-primary);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.image-placeholder {
+    font-size: 4rem;
+    opacity: 0.8;
 }
 
 /* ============================================
@@ -1809,8 +1839,9 @@ a.course-card:focus-visible {
     }
 
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+        max-width: 960px;
     }
 
     .vacancies-grid {
@@ -2003,20 +2034,24 @@ a.course-card:focus-visible {
 
     /* Team Section Mobile */
     .team-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.25rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        max-width: 100%;
     }
     
     .team-card {
         max-width: 100%;
     }
-    
-    .team-image {
-        max-height: 220px;
+
+    .team-image,
+    .team-card .team-image {
+        width: 160px;
+        height: 160px;
+        margin: 1rem auto 0;
     }
     
     .team-info {
-        padding: 1.25rem;
+        padding: 0.875rem 1rem 1rem;
     }
 
     .team-card-empty {
@@ -2070,7 +2105,7 @@ a.course-card:focus-visible {
     }
 
     .team-info {
-        padding: 1.5rem;
+        padding: 0.875rem 1rem 1rem;
     }
 
     .team-section-title {
@@ -2358,7 +2393,8 @@ a.course-card:focus-visible {
     }
 
     .team-bio-small {
-        font-size: 0.875rem;
+        font-size: 0.75rem;
+        line-height: 1.5;
     }
 
     .publication-item {

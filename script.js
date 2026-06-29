@@ -199,6 +199,21 @@ document.querySelectorAll('.team-card').forEach((card, index) => {
     scrollObserver.observe(card);
 });
 
+// Preserve native image dimensions for sharper downscaling from full-resolution files
+function setTeamImageIntrinsicSize(img) {
+    if (img.naturalWidth > 0) {
+        img.setAttribute('width', img.naturalWidth);
+        img.setAttribute('height', img.naturalHeight);
+    }
+}
+
+document.querySelectorAll('.team-card .team-image img').forEach(img => {
+    setTeamImageIntrinsicSize(img);
+    if (!img.complete) {
+        img.addEventListener('load', () => setTeamImageIntrinsicSize(img), { once: true });
+    }
+});
+
 // Animate publication items
 document.querySelectorAll('.publication-item').forEach((item, index) => {
     item.style.opacity = '0';

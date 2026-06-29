@@ -1,0 +1,65 @@
+Ecosystem Services GeoAI Lab — Original Team Bios
+==================================================
+Archived before standardizing website bios to 300 characters or less.
+Source: index.html (Team tab), as of June 2026.
+
+--------------------------------------------------------------------------------
+POSTDOCTORAL ASSOCIATE
+--------------------------------------------------------------------------------
+
+Hao-Yu Liao | Postdoctoral Associate
+Hao-Yu Liao is a postdoctoral associate at the Agronomy department at UF/IFAS. Before joining the lab, he has a PhD degree in Environmental Engineering Sciences in the UF. He was an assistant researcher at National Taiwan University (NTU) from 2016 to 2019. Ecosystem Services, Carbon Storage and Sequestration, Recreational Activities, Machine Learning Algorithms, Optimization Methods, Data Analysis, and GeoAI are among his research interests.
+
+--------------------------------------------------------------------------------
+GRADUATE RESEARCHERS
+--------------------------------------------------------------------------------
+
+Song Jiayi | PhD Student
+Jiayi is a PhD student in the School of Natural Resources and Environment. He received his master's from the University of Florida, where he studied computer engineering. For his PhD, he is working in interdisciplinary ecology, studying how Artificial Intelligence, especially Deep Learning, is used in ecosystem modelling.
+
+Levi Hoskins | PhD Student
+Levi is a PhD student in the School of Natural Resources and Environment and will be working on a PhD in interdisciplinary ecology. They received their bachelor's from Tulane University where they studied habitat fragmentation in the Chocó Rainforest of Ecuador. During their PhD, they will study how humans and migratory animals use urban greenspaces.
+
+Mohanad Diab | PhD Student
+Mohanad is a PhD student in the School of Natural Resources and Environment at the University of Florida, his main interests are related to artificial intelligence, remote sensing, and sustainability science. His research focuses on advancing learning theory and developing foundation models for geospatial and environmental applications.
+
+Izhar Ahmad | PhD Student
+Izhar Ahmad is a PhD student at the University of Florida. He holds a Bachelor's in Civil Engineering and a Master's in Water Resources and Environmental Engineering. His doctoral research centers on mapping cover crops and evaluating their ecosystem services, particularly their influence on water quality, quantity, and nutrient cycling.
+
+Sotirios Kechagias | PhD Candidate
+Sotirios is a first-year PhD candidate with a background in applied geology, earth observation, and AI-based soil mapping. His research focuses on monitoring temporal dynamic changes in soil properties driven by climate change and human interference.
+
+Jeftey Saint Fleur | PhD Student
+Jeftey (Jeff) holds a bachelor's degree in Agricultural Engineering with a focus on Natural Resources and Environment from the State University of Haiti (FAMV/UEH). His undergraduate thesis focused on cadmium uptake by cocoa trees, investigating its accumulation in soils and beans as well as potential mitigation strategies. Currently, his research focuses on understanding drought-induced forest and tree mortality in the context of global warming. He aims to leverage remote sensing and GIS to analyze both physiological and ecological patterns and to predict tree mortality. In addition, Jeftey is a NAAEE (North American Association for Environmental Education) CEE-Change Fellow in 2025 and Climatebase Fellow in 2026, focusing on empowering youth through environmental education and climate-based solutions. Besides research, Jeftey enjoys playing and watching soccer, and spending time with his family.
+
+Yu Xin | PhD Student
+Yu Xin received his Bachelor of Engineering degree in Digital Media Technology from North China University of Technology in 2023. In 2024, he enrolled in the Master of Science program in Electrical and Computer Engineering at the University of Florida. During his master's studies, his research focused primarily on multimodal models and vision-language models, with a particular emphasis on their applications in 3D medical image analysis. He will continue his studies at the University of Florida as a Ph.D. student in Computer Science starting Fall 2026.
+
+--------------------------------------------------------------------------------
+UNDERGRADUATE RESEARCHERS
+--------------------------------------------------------------------------------
+
+Olivia Zhang | Undergraduate Student
+Olivia Zhang is an undergraduate student at the University of Florida studying Geography and Data Science and pursuing a certificate in Geographic AI. Having grown up in coastal cities, she is passionate about leveraging geospatial data to better understand human-environment interactions in a changing climate.
+
+Luca Pishos | Undergraduate Researcher
+Luca Pishos is an undergraduate researcher studying Computer Science and Mathematics in the College of Engineering. His experience includes software engineering, computer vision, computational modeling, and data analytics. In the lab, he focuses on geospatial informatics and remote sensing, using machine learning to analyze satellite imagery.
+
+Angelina Wu | Undergraduate Researcher
+Angelina Wu is an undergraduate researcher studying computer science and statistics. She is experienced in software engineering, from cloud and infrastructure to full-stack, and data analytics. She is interested in using computer science to create tools with equitable and scalable benefits. In this lab, she focuses on using machine learning to extract insights from satellite imagery.
+
+--------------------------------------------------------------------------------
+ALUMNI
+--------------------------------------------------------------------------------
+
+Joseph B. Benjamin | Former Undergraduate Researcher
+Joseph (Joey) Benjamin studies at the intersection of equitable spatial planning, AI technology, and environmentalism. Currently, he is a fourth-year Sustainability and the Built Environment + Geodesign undergraduate at the University of Florida.
+
+Zhou Tang | Former Postdoctoral Associate
+Zhou (Joe) Tang was a postdoctoral associate at the Agronomy Department, University of Florida Institute of Food and Agricultural (UF/IFAS). He obtained his PhD degree in Crop and Soil Sciences from Washington State University.
+
+Dinesh Chowdary | Alumni
+Dinesh graduated with a Master of Science in Computer Science from the University of Florida.
+
+Srikantnag Angondalli Nagaraja | Alumni
+Srikant holds a Master of Science in Electrical and Computer Engineering from the University of Florida. He currently works as a Data Scientist at Kartasoft Inc., focusing on applying geospatial data to real-world challenges. His experience includes AI-driven work in wildfire applications and mapping invasive species using geospatial data. He is currently engaged in energy sector risk analysis using geospatial data.
