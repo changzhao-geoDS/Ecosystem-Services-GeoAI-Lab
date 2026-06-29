@@ -48,6 +48,9 @@ Luca Pishos is an undergraduate researcher studying Computer Science and Mathema
 Angelina Wu | Undergraduate Researcher
 Angelina Wu is an undergraduate researcher studying computer science and statistics. She is experienced in software engineering, from cloud and infrastructure to full-stack, and data analytics. She is interested in using computer science to create tools with equitable and scalable benefits. In this lab, she focuses on using machine learning to extract insights from satellite imagery.
 
+Ashley Hays | Undergraduate Summer Intern
+Ashley studies Geomatics with a focus on Geospatial Analysis at the University of Florida, with a minor in Medical Geography and a Geographic Information Analysis certificate. She works on GIS modeling and data analysis within the lab, using geospatial data to address global challenges.
+
 --------------------------------------------------------------------------------
 ALUMNI
 --------------------------------------------------------------------------------
