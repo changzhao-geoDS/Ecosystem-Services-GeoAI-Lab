@@ -10,6 +10,9 @@ POSTDOCTORAL ASSOCIATE
 Hao-Yu Liao | Postdoctoral Associate
 Hao-Yu Liao is a postdoctoral associate at the Agronomy department at UF/IFAS. Before joining the lab, he has a PhD degree in Environmental Engineering Sciences in the UF. He was an assistant researcher at National Taiwan University (NTU) from 2016 to 2019. Ecosystem Services, Carbon Storage and Sequestration, Recreational Activities, Machine Learning Algorithms, Optimization Methods, Data Analysis, and GeoAI are among his research interests.
 
+Luran Dong | Postdoctoral Associate
+I am a Postdoctoral Associate in the Agronomy Department at UF/IFAS. I received my Ph.D. from the University of Rhode Island in Environmental and Natural Resource Economics. My research applies GIS, remote sensing, and causal inference methods to examine the economic impacts of natural resources and environmental change.
+
 --------------------------------------------------------------------------------
 GRADUATE RESEARCHERS
 --------------------------------------------------------------------------------
