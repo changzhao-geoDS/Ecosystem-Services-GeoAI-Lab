@@ -2580,3 +2580,109 @@ a.course-card:focus-visible {
         font-size: 0.8125rem;
     }
 }
+
+/* ============================================
+   Group Gallery
+   ============================================ */
+.group-gallery {
+    background: var(--light-bg);
+    min-height: calc(100vh - 80px);
+}
+
+.gallery-intro {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+.group-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.group-gallery-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #e8edf1;
+    box-shadow: var(--shadow-sm);
+    cursor: zoom-in;
+}
+
+.group-gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.group-gallery-item:hover img,
+.group-gallery-item:focus-visible img {
+    transform: scale(1.035);
+    filter: brightness(0.94);
+}
+
+.group-gallery-item:focus-visible {
+    outline: 3px solid var(--accent-teal);
+    outline-offset: 3px;
+}
+
+.gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(5, 14, 24, 0.92);
+}
+
+.gallery-lightbox img {
+    max-width: min(1200px, 94vw);
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-lightbox-close {
+    position: fixed;
+    top: 1rem;
+    right: 1.25rem;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 50%;
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .group-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .group-gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .gallery-lightbox {
+        padding: 1rem;
+    }
+}

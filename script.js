@@ -255,42 +255,47 @@ window.addEventListener('scroll', () => {
 
 
 // ============================================
+// Group Pictures
+// ============================================
+// Keep all group-photo paths in one place. Add new JPG/JPEG/PNG/WebP/GIF/AVIF
+// files here and they will appear in both the home mosaic and Group Gallery.
+const GROUP_PICTURES = [
+    'GroupPictures/20241017_091501.jpg',
+    'GroupPictures/20241017_092226.jpg',
+    'GroupPictures/20241017_092245.jpg',
+    'GroupPictures/20241017_095331.jpg',
+    'GroupPictures/20241017_095346(0).jpg',
+    'GroupPictures/20241017_095353.jpg',
+    'GroupPictures/IMG_0979.JPEG',
+    'GroupPictures/IMG_0992.JPEG',
+    'GroupPictures/IMG_0999.JPEG',
+    'GroupPictures/IMG_1005.JPEG',
+    'GroupPictures/IMG_1006.JPEG',
+    'GroupPictures/IMG_1016.JPG',
+    'GroupPictures/IMG_1026.JPG',
+    'GroupPictures/IMG_1062.JPEG',
+    'GroupPictures/IMG_5565.JPG',
+    'GroupPictures/IMG_5596.JPG',
+    'GroupPictures/IMG_5598.JPG',
+    'GroupPictures/IMG_5606.JPG',
+    'GroupPictures/20251103_122339.jpg',
+    'GroupPictures/Photo Dec 16 2025, 12 55 25 PM.jpg',
+    'GroupPictures/Photo Dec 16 2025, 8 52 00 AM.jpg',
+    'GroupPictures/Photo Dec 17 2025, 8 21 08 AM.jpg',
+    'GroupPictures/Photo Dec 17 2025, 8 22 37 AM.jpg',
+    'GroupPictures/Photo Dec 17 2025, 8 24 44 AM.jpg',
+    'GroupPictures/Photo Dec 18 2025, 12 36 07 PM.jpg',
+];
+
+// ============================================
 // Mosaic Background
 // ============================================
 const initMosaicBackground = () => {
     const mosaicContainer = document.getElementById('mosaicBackground');
     if (!mosaicContainer) return;
 
-    // List of group picture images
-    const images = [
-        // Root level images
-        'GroupPictures/20241017_091501.jpg',
-        'GroupPictures/20241017_092226.jpg',
-        'GroupPictures/20241017_092245.jpg',
-        'GroupPictures/20241017_095331.jpg',
-        'GroupPictures/20241017_095346(0).jpg',
-        'GroupPictures/20241017_095353.jpg',
-        'GroupPictures/IMG_0979.JPEG',
-        'GroupPictures/IMG_0992.JPEG',
-        'GroupPictures/IMG_0999.JPEG',
-        'GroupPictures/IMG_1005.JPEG',
-        'GroupPictures/IMG_1006.JPEG',
-        'GroupPictures/IMG_1016.JPG',
-        'GroupPictures/IMG_1026.JPG',
-        'GroupPictures/IMG_1062.JPEG',
-        'GroupPictures/IMG_5565.JPG',
-        'GroupPictures/IMG_5596.JPG',
-        'GroupPictures/IMG_5598.JPG',
-        'GroupPictures/IMG_5606.JPG',
-        // New images
-        'GroupPictures/20251103_122339.jpg',
-        'GroupPictures/Photo Dec 16 2025, 12 55 25 PM.jpg',
-        'GroupPictures/Photo Dec 16 2025, 8 52 00 AM.jpg',
-        'GroupPictures/Photo Dec 17 2025, 8 21 08 AM.jpg',
-        'GroupPictures/Photo Dec 17 2025, 8 22 37 AM.jpg',
-        'GroupPictures/Photo Dec 17 2025, 8 24 44 AM.jpg',
-        'GroupPictures/Photo Dec 18 2025, 12 36 07 PM.jpg',
-    ];
+    // Reuse the centralized group-picture list
+    const images = [...GROUP_PICTURES];
 
     // Shuffle array for randomness
     const shuffledImages = images.sort(() => Math.random() - 0.5);
@@ -308,6 +313,70 @@ const initMosaicBackground = () => {
         mosaicItem.appendChild(img);
         mosaicContainer.appendChild(mosaicItem);
     });
+};
+
+// ============================================
+// Group Gallery
+// ============================================
+const initGroupGallery = () => {
+    const galleryGrid = document.getElementById('groupGalleryGrid');
+    if (!galleryGrid) return;
+
+    GROUP_PICTURES.forEach((imageSrc, index) => {
+        const item = document.createElement('button');
+        item.className = 'group-gallery-item';
+        item.type = 'button';
+        item.setAttribute('aria-label', `Open group photo ${index + 1}`);
+
+        const img = document.createElement('img');
+        img.src = imageSrc;
+        img.alt = `GeoAI Lab group photo ${index + 1}`;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+
+        item.appendChild(img);
+        item.addEventListener('click', () => openGalleryLightbox(imageSrc, img.alt));
+        galleryGrid.appendChild(item);
+    });
+};
+
+const openGalleryLightbox = (imageSrc, altText) => {
+    const lightbox = document.createElement('div');
+    lightbox.className = 'gallery-lightbox';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.setAttribute('aria-label', 'Group photo viewer');
+
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = altText;
+
+    const closeButton = document.createElement('button');
+    closeButton.className = 'gallery-lightbox-close';
+    closeButton.type = 'button';
+    closeButton.setAttribute('aria-label', 'Close photo');
+    closeButton.innerHTML = '&times;';
+
+    const close = () => {
+        document.removeEventListener('keydown', handleKeydown);
+        lightbox.remove();
+        document.body.style.overflow = '';
+    };
+    const handleKeydown = (event) => {
+        if (event.key === 'Escape') close();
+    };
+
+    closeButton.addEventListener('click', close);
+    lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) close();
+    });
+    document.addEventListener('keydown', handleKeydown);
+
+    lightbox.appendChild(closeButton);
+    lightbox.appendChild(img);
+    document.body.appendChild(lightbox);
+    document.body.style.overflow = 'hidden';
+    closeButton.focus();
 };
 
 // ============================================
@@ -353,6 +422,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize mosaic background
     initMosaicBackground();
+
+    // Initialize group gallery
+    initGroupGallery();
     
     // Initialize show more buttons
     initShowMoreNews();
